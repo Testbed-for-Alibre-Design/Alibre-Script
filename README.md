@@ -21,11 +21,15 @@
 
 ```
 C:.
+│   .gitignore
 │   Alibre-Script.code-workspace
+│   ChatGPT-README0.md
+│   ChatGPT-README1.md
+│   ChatGPT-README2.md
 │   LICENSE
 │   README.md
 │
-├───Alibre-Script-Code-Assistant-main
+├───Alibre-Script-Code-Assistant
 │       001.py
 │       002.py
 │       003.py
