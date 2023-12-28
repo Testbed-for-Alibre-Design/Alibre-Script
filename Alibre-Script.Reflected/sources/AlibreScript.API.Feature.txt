@@ -1,0 +1,6 @@
+Type->AlibreScript.API.Feature
+Property->Name
+Method->GetColor()
+Method->SetColor(ColorNewColor)
+Method->SetColor(ByteRed,ByteGreen,ByteBlue)
+Field->_Feature-Type->IADPartFeature

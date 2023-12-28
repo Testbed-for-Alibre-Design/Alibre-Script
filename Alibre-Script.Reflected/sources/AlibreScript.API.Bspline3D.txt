@@ -1,0 +1,16 @@
+Type->AlibreScript.API.Bspline3D
+Property->ControlPoints
+Property->Weights
+Property->KnotVectors
+Property->IsReference
+Property->Order
+Property->Length
+Method->GetX(Doubleu)
+Method->GetY(Doubleu)
+Method->GetZ(Doubleu)
+Method->GetPointAt(Doubleu)
+Method->GetNormalAt(Doubleu)
+Method->Subdivide(Int32Segments)
+Method->SubdivideGetNormals(Int32Segments)
+Method->ToXml()
+Method->FromXml(XElementXml)

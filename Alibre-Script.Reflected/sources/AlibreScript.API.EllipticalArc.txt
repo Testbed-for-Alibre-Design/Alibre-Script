@@ -1,0 +1,15 @@
+Type->AlibreScript.API.EllipticalArc
+Property->Center
+Property->StartPoint
+Property->EndPoint
+Property->CenterPoint
+Property->Start
+Property->End
+Property->Radius
+Property->MajorAxisAngle
+Property->MinorMajorRatio
+Property->IsReference
+Method->FigureObject()
+Method->SetInstance(IADSketchFigureFigure)
+Method->ToXml()
+Method->FromXml(XElementXml)

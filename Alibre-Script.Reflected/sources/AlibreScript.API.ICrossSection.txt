@@ -1,0 +1,2 @@
+Type->AlibreScript.API.ICrossSection
+Method->CrossSectionObject()

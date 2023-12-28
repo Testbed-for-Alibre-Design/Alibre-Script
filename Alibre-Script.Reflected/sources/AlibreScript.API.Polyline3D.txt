@@ -1,0 +1,13 @@
+Type->AlibreScript.API.Polyline3D
+Method->AddPoint(PolylinePoint3DPoint)
+Method->AddPoint(DoubleX,DoubleY,DoubleZ)
+Method->InsertPoint(Int32Index,PolylinePoint3DPoint)
+Method->AddPolyline(Polyline3DAppendLine)
+Method->IsPointOnLine(PolylinePoint3DA,PolylinePoint3DB,PolylinePoint3DP,DoubleTolerance)
+Method->SplitAtPoint(PolylinePoint3DSplitPoint,DoubleTolerence)
+Method->Clone()
+Method->Clone(Int32StartIndex,Int32EndIndex)
+Method->Join(Polyline3DAppendLine)
+Method->Offset(DoubleOffsetX,DoubleOffsetY,DoubleOffsetZ)
+Method->RemoveDuplicates()
+Field->Points-Type->List`1

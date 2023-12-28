@@ -1,0 +1,2 @@
+Type->AlibreScript.API.ISketchFigure3D
+Method->ToXml()

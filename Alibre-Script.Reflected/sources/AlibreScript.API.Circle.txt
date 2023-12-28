@@ -1,0 +1,10 @@
+Type->AlibreScript.API.Circle
+Property->CenterPoint
+Property->Center
+Property->Radius
+Property->IsReference
+Property->Length
+Method->FigureObject()
+Method->SetInstance(IADSketchFigureFigure)
+Method->ToXml()
+Method->FromXml(XElementXml)

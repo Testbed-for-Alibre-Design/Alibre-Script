@@ -1,0 +1,10 @@
+Type->AlibreScript.API.CSharp
+Method->add_OnWriteLine(WriteLineHandlervalue)
+Method->remove_OnWriteLine(WriteLineHandlervalue)
+Method->add_OnWrite(WriteHandlervalue)
+Method->remove_OnWrite(WriteHandlervalue)
+Method->CompileAndRun(StringCode)
+Method->CompileAndRun(StringCode,PythonDictionaryVariables)
+Method->Compile(StringCode)
+Method->Run(Script`1Script)
+Method->Run(Script`1Script,PythonDictionaryVariables)

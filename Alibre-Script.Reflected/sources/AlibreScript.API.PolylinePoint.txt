@@ -1,0 +1,10 @@
+Type->AlibreScript.API.PolylinePoint
+Method->op_Multiply(Matrix3DMatrix,PolylinePointPoint)
+Method->op_Multiply(PolylinePointPoint,Matrix3DMatrix)
+Method->op_Subtraction(PolylinePointP2,PolylinePointP1)
+Method->CrossProduct(PolylinePointP1,PolylinePointP2)
+Method->Offset(DoubleX,DoubleY)
+Method->Scale(DoubleScaleOriginX,DoubleScaleOriginY,DoubleScaleFactor)
+Method->RotateZ(DoubleCenterX,DoubleCenterY,DoubleAngle)
+Field->X-Type->Double
+Field->Y-Type->Double

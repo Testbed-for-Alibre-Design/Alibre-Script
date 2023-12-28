@@ -1,0 +1,10 @@
+Type->AlibreScript.API.CircularArc3D
+Property->Center
+Property->StartPoint
+Property->EndPoint
+Property->Radius
+Property->Angle
+Property->Type
+Property->IsReference
+Method->ToXml()
+Method->FromXml(XElementXml)

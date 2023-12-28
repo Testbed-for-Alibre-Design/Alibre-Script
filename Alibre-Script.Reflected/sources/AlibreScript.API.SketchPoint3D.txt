@@ -1,0 +1,7 @@
+Type->AlibreScript.API.SketchPoint3D
+Property->X
+Property->Y
+Property->Z
+Property->IsReference
+Method->ToXml()
+Method->FromXml(XElementXml)

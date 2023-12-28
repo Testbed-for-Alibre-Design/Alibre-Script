@@ -1,0 +1,15 @@
+Type->AlibreScript.API.Units
+Method->FromADUnitType(ADUnitsADUnit)
+Method->ToADUnits(DoubleValue)
+Method->FromADUnits(DoubleValue)
+Method->ToTeethPerInch(DoubleTeethPerCurrentUnits)
+Method->FromTeethPerInch(DoubleTeethPerInch)
+Method->ToInches(DoubleValue)
+Method->FromInches(DoubleValue)
+Method->ToMillimeters(DoubleValue)
+Method->FromMillimeters(DoubleValue)
+Method->ToADUnits(List`1Values)
+Method->ToADUnits(DoubleValue,ADUnitsCurrentUnits)
+Method->FromADUnits(DoubleValue,ADUnitsCurrentUnits)
+Method->FromADUnits(List`1ADValues)
+Field->Current-Type->UnitTypes

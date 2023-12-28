@@ -1,0 +1,3 @@
+Type->AlibreScript.API.IPlane
+Method->PlaneObject()
+Method->GetOccurrence()

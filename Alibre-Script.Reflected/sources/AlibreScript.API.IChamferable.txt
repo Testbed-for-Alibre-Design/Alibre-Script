@@ -1,0 +1,2 @@
+Type->AlibreScript.API.IChamferable
+Method->ChamferableObject()

@@ -1,0 +1,7 @@
+Type->AlibreScript.API.TwoD
+Method->TranslatePoint(Tuple`2Point,DoubleXTranslation,DoubleYTranslation)
+Method->_RotatePoint(Tuple`2Point,DoubleAngle)
+Method->RotatePoint(ListPoint,DoubleAngle)
+Method->IsPointInsidePolygon(List`1Vertices,Tuple`2Point)
+Method->GetPerpendicularVector(ListVector)
+Method->NormalizeVector(ListVector)

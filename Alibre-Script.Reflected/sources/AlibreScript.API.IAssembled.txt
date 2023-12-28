@@ -1,0 +1,2 @@
+Type->AlibreScript.API.IAssembled
+Method->GetMappedOccurrence(IADAssemblySessionAssembly)

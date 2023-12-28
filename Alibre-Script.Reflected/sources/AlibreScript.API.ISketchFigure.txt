@@ -1,0 +1,4 @@
+Type->AlibreScript.API.ISketchFigure
+Method->ToXml()
+Method->FigureObject()
+Method->SetInstance(IADSketchFigureFigure)

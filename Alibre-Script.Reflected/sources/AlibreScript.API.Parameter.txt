@@ -1,0 +1,14 @@
+Type->AlibreScript.API.Parameter
+Property->Name
+Property->Comment
+Property->Equation
+Property->ExcelWorkbook
+Property->ExcelSheet
+Property->ExcelCell
+Property->Type
+Property->Units
+Property->Value
+Property->RawValue
+Method->AttachToExcel(StringDocument,StringSheet,StringCell,UnitTypesUnits)
+Field->_Parameter-Type->IADParameter
+Field->_Session-Type->IADSession

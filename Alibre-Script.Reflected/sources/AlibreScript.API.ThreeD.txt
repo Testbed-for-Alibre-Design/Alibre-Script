@@ -1,0 +1,11 @@
+Type->AlibreScript.API.ThreeD
+Method->VectorTransform(Vector3DVector1,Vector3DVector2)
+Method->GetMatrixFromTransformation(IADTransformationTransformation)
+Method->TransformPoint(Double[]Point,IADTransformationTransformation)
+Method->TransformVector(Double[]Vector,IADTransformationTransformation)
+Method->CreateTransformation(DoubleOffsetX,DoubleOffsetY,DoubleOffsetZ,DoubleAngleX,DoubleAngleY,DoubleAngleZ,BooleanTranslationFirst,IADGeometryFactoryGeomFactory)
+Method->CreateTranslation(Doublex,Doubley,Doublez,IADGeometryFactoryGeomFactory)
+Method->CreateRotation(DoubleAngle,RotationDirectionsDirection,IADGeometryFactoryGeomFactory)
+Method->DecomposeTransformation(IADTransformationTransformation,Double&OffsetX,Double&OffsetY,Double&OffsetZ,Double&AngleX,Double&AngleY,Double&AngleZ)
+Method->GetPerpendicularVector(ListVector)
+Method->TransformPointUsingVectors(ListSourceVector,ListDestinationVector,ListPoint)

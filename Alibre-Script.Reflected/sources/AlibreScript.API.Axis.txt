@@ -1,0 +1,16 @@
+Type->AlibreScript.API.Axis
+Property->Name
+Method->GetPart()
+Method->ConstraintObject()
+Method->AxisObject()
+Method->SelectableObject()
+Method->GetSelectionAssembly()
+Method->SetOccurrence(IADOccurrenceOccurrence)
+Method->GetOccurrence()
+Method->SetParentAssembly(AssemblyParentAssembly)
+Method->GetParentAssembly()
+Method->Hide()
+Method->Show()
+Method->GetGeometry(IADPoint&Point,IADPoint&Vector)
+Field->_Axis-Type->IADDesignAxis
+Field->_SelectionSession-Type->IADSession

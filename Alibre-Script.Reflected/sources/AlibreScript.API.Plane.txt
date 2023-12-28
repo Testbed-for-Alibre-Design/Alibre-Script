@@ -1,0 +1,17 @@
+Type->AlibreScript.API.Plane
+Property->Name
+Method->GetPart()
+Method->SurfaceObject()
+Method->ConstraintObject()
+Method->PlaneObject()
+Method->SelectableObject()
+Method->GetSelectionAssembly()
+Method->SetOccurrence(IADOccurrenceOccurrence)
+Method->GetOccurrence()
+Method->SetParentAssembly(AssemblyParentAssembly)
+Method->GetParentAssembly()
+Method->IsParallel(PlaneOtherPlane)
+Method->Hide()
+Method->Show()
+Field->_Plane-Type->IADDesignPlane
+Field->_SelectionSession-Type->IADSession

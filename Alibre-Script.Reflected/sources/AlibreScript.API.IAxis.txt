@@ -1,0 +1,3 @@
+Type->AlibreScript.API.IAxis
+Method->AxisObject()
+Method->GetOccurrence()

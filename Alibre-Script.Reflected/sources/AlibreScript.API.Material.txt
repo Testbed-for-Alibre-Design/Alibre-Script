@@ -1,0 +1,3 @@
+Type->AlibreScript.API.Material
+Field->ABS-Type->Double
+Field->PLA-Type->Double

@@ -1,0 +1,6 @@
+Type->AlibreScript.API.IInstance
+Method->GetSelectionAssembly()
+Method->GetParentAssembly()
+Method->SetParentAssembly(AssemblyParentAssembly)
+Method->SetOccurrence(IADOccurrenceOccurrence)
+Method->GetOccurrence()

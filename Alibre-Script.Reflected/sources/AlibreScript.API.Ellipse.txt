@@ -1,0 +1,11 @@
+Type->AlibreScript.API.Ellipse
+Property->Center
+Property->CenterPoint
+Property->Radius
+Property->MajorAxisAngle
+Property->MinorMajorRatio
+Property->IsReference
+Method->FigureObject()
+Method->SetInstance(IADSketchFigureFigure)
+Method->ToXml()
+Method->FromXml(XElementXml)

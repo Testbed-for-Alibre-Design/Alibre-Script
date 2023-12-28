@@ -1,0 +1,10 @@
+Type->AlibreScript.API.Configuration
+Property->Name
+Property->IsActive
+Method->SetLocks(LockTypesLocks)
+Method->LockAll()
+Method->UnlockAll()
+Method->Activate()
+Field->_Configuration-Type->IADConfiguration
+Field->_Session-Type->IADSession
+Field->_Occurrence-Type->IADOccurrence

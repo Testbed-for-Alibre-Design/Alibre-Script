@@ -1,0 +1,9 @@
+Type->AlibreScript.API.SketchPoint
+Property->Point
+Property->X
+Property->Y
+Property->IsReference
+Method->FigureObject()
+Method->SetInstance(IADSketchFigureFigure)
+Method->ToXml()
+Method->FromXml(XElementXml)

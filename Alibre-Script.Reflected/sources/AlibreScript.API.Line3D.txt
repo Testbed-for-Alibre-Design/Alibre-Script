@@ -1,0 +1,10 @@
+Type->AlibreScript.API.Line3D
+Property->StartPoint
+Property->EndPoint
+Property->IsReference
+Property->Length
+Property->Start
+Property->End
+Method->SetInstance(IAD3DSketchLineLine)
+Method->ToXml()
+Method->FromXml(XElementXml)

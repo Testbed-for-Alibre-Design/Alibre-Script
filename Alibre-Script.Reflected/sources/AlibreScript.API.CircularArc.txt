@@ -1,0 +1,15 @@
+Type->AlibreScript.API.CircularArc
+Property->Center
+Property->StartPoint
+Property->EndPoint
+Property->Start
+Property->End
+Property->CenterPoint
+Property->Radius
+Property->Angle
+Property->Type
+Property->IsReference
+Method->FigureObject()
+Method->SetInstance(IADSketchFigureFigure)
+Method->ToXml()
+Method->FromXml(XElementXml)
