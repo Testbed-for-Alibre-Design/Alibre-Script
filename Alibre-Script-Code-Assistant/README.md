@@ -1,4 +1,9 @@
-# Alibre Script code assistant
+# Alibre Script Code Assistant GPT
+## Introduction
+Source files and content from Alibre Script custom GPT.
+
+https://chatgpt.com/g/g-HHbHoqLra-alibrescript-code-assistant
+
 ## Content
 ```
     001.py

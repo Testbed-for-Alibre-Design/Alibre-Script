@@ -1,5 +1,6 @@
-# Work in Progress 
 # Alibre Script examples, demos and experiments.
+## Introduction
+This repository contains a collection of examples, demos, and experimental projects for Alibre Script, a scripting environment for Alibre Design. Here you'll find everything from basic script examples to advanced usage scenarios, aiding both learning and development.
 ## Overview
 - Alibre-Script.Reflected
   - Python stub files generated using .NET reflection
@@ -15,6 +16,11 @@
   - Library examples
 - alibre-script-examples
   - Documentation examples
+## Prerequisites
+- Python 3.8 or later
+- .NET Runtime
+- Visual Studio Code
+- Alibre Design Software
 ## Contents
 ```
 C:.
