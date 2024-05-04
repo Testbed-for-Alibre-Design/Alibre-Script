@@ -1,10 +1,7 @@
 #https://help.alibre.com/articles/#!alibre-help-v23/square-hollow-formed-profiles
-
 # Square hollow hot and cold formed profiles according to BS/EN-10210-2:1997 and BS/EN-10219:1997
- 
 # Measurements table B,T,ro,ri from here http://www.roymech.co.uk/Useful_Tables/Sections/SHS_hf.html
 PData = 0
- 
 HData = {}
 HData[20]=[2,3,2],[2.5,3.75,2.5]
 HData[25]=[2.0, 3.0, 2.0],[2.5, 3.75, 2.5],[3.0, 4.5, 3.0]
@@ -28,7 +25,6 @@ HData[260]=[6.0, 9.0, 6.0],[6.3, 9.45, 6.3],[8.0, 12.0, 8.0],[10.0, 15.0, 10.0],
 HData[300]=[6.0, 9.0, 6.0],[6.3, 9.45, 6.3],[8.0, 12.0, 8.0],[10.0, 15.0, 10.0],[12.0, 18.0, 12.0],[12.5, 18.75, 12.5],[16.0, 24.0, 16.0]
 HData[350]=[8.0, 12.0, 8.0],[10.0, 15.0, 10.0],[12.0, 18.0, 12.0],[12.5, 18.75, 12.5],[16.0, 24.0, 16.0]
 HData[400]=[8.0, 12.0, 8.0],[10.0, 15.0, 10.0],[12.0, 18.0, 12.0],[12.5, 18.75, 12.5],[16.0, 24.0, 16.0],[20.0, 30.0, 20.0]
- 
 CData = {}
 CData[20]=[2.0, 4.0, 2.0],[2.5, 5.0, 2.5]
 CData[25]=[2.0, 4.0, 2.0],[2.5, 5.0, 2.5],[3.0, 6.0, 3.0]
@@ -52,44 +48,31 @@ CData[260]=[6.0, 12.0, 6.0],[6.3, 15.75, 9.45],[8.0, 20.0, 12.0],[10.0, 25.0, 15
 CData[300]=[6.0, 12.0, 6.0],[6.3, 15.75, 9.45],[8.0, 20.0, 12.0],[10.0, 25.0, 15.0],[12.0, 36.0, 24.0],[12.5, 37.5, 25.0],[16.0, 48.0, 32.0]
 CData[350]=[8.0, 20.0, 12.0],[10.0, 25.0, 15.0],[12.0, 36.0, 24.0],[12.5, 37.5, 25.0],[16.0, 48.0, 32.0]
 CData[400]=[10.0, 25.0, 15.0],[12.0, 36.0, 24.0],[12.5, 37.5, 25.0],[16.0, 48.0, 32.0]
- 
- 
 #--- INPUT HERE ---#
 print('Select hot or cold formed profiles')
 print('0 = Hot\n1 = Cold')
 HorC = int(Read())
- 
 if HorC == 0:
     PData = HData
 else:
     PData = CData
- 
- 
 print('Input dimension in mm, only integers')
 print sorted(PData, key=lambda key: PData[key])
 Size = int(Read())
- 
- 
 print('Please select thickness')
 for i,j in enumerate(PData[Size]):
     print i,'-',j[0],'mm'
- 
 readTh = int(Read())
- 
 Thick = PData[Size][readTh][0]
 ro = PData[Size][readTh][1]
 ri = PData[Size][readTh][2]
- 
 print('Please input length in mm')
 Length = float(Read())
 #--- INPUT STOP ---#
- 
 # all values are in millimeters
 Units.Current = UnitTypes.Millimeters
- 
 # Create part
 Square = Part('Hollow Section %dx%dx%d' % (Size,Thick,Length))
- 
 # Body
 Profile = Square.AddSketch('Profile', Square.GetPlane('XY-Plane'))
 # Outer square
@@ -100,19 +83,13 @@ Line.AddPoint(PolylinePoint(Size/2.,Size/2))
 Line.AddPoint(PolylinePoint(-Size/2.,Size/2))
 Line.AddPoint(PolylinePoint(-Size/2.,-Size/2))
 Profile.AddPolyline(Line,False)
- 
 # Inner Square
 scaleFactor = ((Size-(Thick*2.))/Size)*100.0
 #print scaleFactor
 Profile.CopyFrom(Profile,0,0,0,0,0,0,0,scaleFactor)
- 
 # Extrude
 Square.AddExtrudeBoss('Extrude',Profile,Length,False)
- 
 # Outer radius
 Square.AddFillet('Fillet<1>',[Square.GetEdge('Edge<6>'),Square.GetEdge('Edge<2>'),Square.GetEdge('Edge<4>'),Square.GetEdge('Edge<9>')],ro,False)
- 
 # Inner radius
 Square.AddFillet('Fillet<2>',[Square.GetEdge('Edge<30>'),Square.GetEdge('Edge<31>'),Square.GetEdge('Edge<33>'),Square.GetEdge('Edge<35>')],ri,False)
-
-

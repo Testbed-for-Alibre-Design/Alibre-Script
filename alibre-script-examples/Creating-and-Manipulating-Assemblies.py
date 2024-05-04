@@ -1,6 +1,4 @@
 #https://help.alibre.com/articles/#!alibre-help-v23/creating-and-manipulating-assemblies
-
-
 # create a new empty assembly
 Asm = Assembly("Test");
 # add an existing part, located at the origin, replace path with your own

@@ -3,7 +3,6 @@ class ICrossSection:
         self,
     ):
         pass
-
     def CrossSectionObject(
         self,
     ):

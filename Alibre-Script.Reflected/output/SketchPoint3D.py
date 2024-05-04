@@ -5,11 +5,9 @@ class SketchPoint3D:
         self.Y = Y
         self.Z = Z
         self.IsReference = IsReference
-
     def ToXml(
         self,
     ):
         pass
-
     def FromXml(self, XElementXml):
         pass

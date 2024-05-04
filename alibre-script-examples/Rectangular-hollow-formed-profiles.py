@@ -1,14 +1,8 @@
 #https://help.alibre.com/articles/#!alibre-help-v23/rectangular-hollow-formed-profiles
-
 # Rectangular hollow hot and cold formed profiles according to BS/EN-10210-2:1997 and BS/EN-10219:1997
- 
 # Measurements table H,B,T,ro,ri from here http://www.roymech.co.uk/Useful_Tables/Sections/RHS_cf.html
- 
 from collections import OrderedDict
- 
- 
 PData = 0
- 
 HData = {}
 HData[50.0]={}
 HData[50.0][25.0]=[2.5, 3.75, 2.5],[3.0, 4.5, 3.0]
@@ -52,7 +46,6 @@ HData[450.0]={}
 HData[450.0][250.0]=[8.0, 12.0, 8.0],[10.0, 15.0, 10.0],[12.0, 18.0, 12.0],[12.5, 18.75, 12.5],[16.0, 24.0, 16.0]
 HData[500.0]={}
 HData[500.0][300.0]=[8.0, 12.0, 8.0],[10.0, 15.0, 10.0],[12.0, 18.0, 12.0],[12.5, 18.75, 12.5],[16.0, 24.0, 16.0],[20.0, 30.0, 20.0]
- 
 CData = {}
 CData[40.0]={}
 CData[40.0][20.0]=[2.0, 4.0, 2.0],[2.5, 5.0, 2.5],[3.0, 6.0, 3.0]
@@ -101,54 +94,39 @@ CData[350.0][250.0]=[6.0, 12.0, 6.0],[6.3, 15.75, 9.45],[8.0, 20.0, 12.0],[10.0,
 CData[400.0]={}
 CData[400.0][200.0]=[8.0, 20.0, 12.0],[10.0, 25.0, 15.0],[12.5, 37.5, 25.0],[16.0, 48.0, 32.0]
 CData[400.0][300.0]=[8.0, 20.0, 12.0],[10.0, 25.0, 15.0],[12.0, 36.0, 24.0],[12.5, 37.5, 25.0],[16.0, 48.0, 32.0]
- 
- 
 #--- INPUT HERE ---#
 print('Select hot or cold formed profiles')
 print('0 = Hot\n1 = Cold')
 HorC = int(Read())
- 
 if HorC == 0:
     PData = OrderedDict(sorted(HData.items(), key=lambda t: t[0]))
 else:
     PData = OrderedDict(sorted(CData.items(), key=lambda t: t[0]))
- 
 print('Please select height')
 for i,j in enumerate(PData):
     print i,'-',j,'mm'
-     
 readH = int(Read())
 Size = PData.keys()[readH]
 WData = PData[Size]
- 
 print('Please select width')
 for i,j in enumerate(WData):
     print i,'-',j,'mm'
-     
 readW = int(Read())
 Width = WData.keys()[readW]
- 
- 
 print('Please select thickness')
 for i,j in enumerate(WData[Width]):
     print i,'-',j[0],'mm'
- 
 readTh = int(Read())
- 
 Thick = WData[Width][readTh][0]
 ro = WData[Width][readTh][1]
 ri = WData[Width][readTh][2]
- 
 print('Please input length in mm')
 Length = float(Read())
 #--- INPUT STOP ---#
- 
 # all values are in millimeters
 Units.Current = UnitTypes.Millimeters
- 
 # Create part
 Square = Part('Hollow Section %dx%dx%dx%d' % (Size,Width,Thick,Length))
- 
 # Body
 Profile = Square.AddSketch('Profile', Square.GetPlane('XY-Plane'))
 # Outer square
@@ -159,7 +137,6 @@ Line.AddPoint(PolylinePoint(Width/2.,Size/2.))
 Line.AddPoint(PolylinePoint(-Width/2.,Size/2.))
 Line.AddPoint(PolylinePoint(-Width/2.,-Size/2.))
 Profile.AddPolyline(Line,False)
- 
 # Inner Square
 Line = Polyline()
 Line.AddPoint(PolylinePoint((-Width/2.)+Thick,(-Size/2.)+Thick))
@@ -168,14 +145,9 @@ Line.AddPoint(PolylinePoint((Width/2.)-Thick,(Size/2.)-Thick))
 Line.AddPoint(PolylinePoint((-Width/2.)+Thick,(Size/2.)-Thick))
 Line.AddPoint(PolylinePoint((-Width/2.)+Thick,(-Size/2.)+Thick))
 Profile.AddPolyline(Line,False)
- 
 # Extrude
 Square.AddExtrudeBoss('Extrude',Profile,Length,False)
- 
 # Outer radius
 Square.AddFillet('Fillet<1>',[Square.GetEdge('Edge<6>'),Square.GetEdge('Edge<2>'),Square.GetEdge('Edge<4>'),Square.GetEdge('Edge<9>')],ro,False)
- 
 # Inner radius
 Square.AddFillet('Fillet<2>',[Square.GetEdge('Edge<30>'),Square.GetEdge('Edge<31>'),Square.GetEdge('Edge<33>'),Square.GetEdge('Edge<35>')],ri,False)
-
-

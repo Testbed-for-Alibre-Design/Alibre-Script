@@ -3,6 +3,5 @@ class IAssembled:
         self,
     ):
         pass
-
     def GetMappedOccurrence(self, IADAssemblySessionAssembly):
         pass

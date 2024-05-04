@@ -1,4 +1,3 @@
-
 class Parameter:
     def __init__(self, Name, Comment, Equation, ExcelWorkbook, ExcelSheet, ExcelCell, Type, Units, Value, RawValue):
         pass
@@ -12,7 +11,5 @@ class Parameter:
         self.Units = Units
         self.Value = Value
         self.RawValue = RawValue
-    
     def AttachToExcel(self,StringDocument,StringSheet,StringCell,UnitTypesUnits):
         pass
-

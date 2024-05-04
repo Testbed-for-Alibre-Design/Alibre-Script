@@ -3,12 +3,10 @@ class IPlane:
         self,
     ):
         pass
-
     def PlaneObject(
         self,
     ):
         pass
-
     def GetOccurrence(
         self,
     ):

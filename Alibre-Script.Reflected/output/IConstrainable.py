@@ -3,7 +3,6 @@ class IConstrainable:
         self,
     ):
         pass
-
     def ConstraintObject(
         self,
     ):

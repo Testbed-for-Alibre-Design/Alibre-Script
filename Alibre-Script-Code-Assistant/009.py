@@ -34,5 +34,4 @@ threadHoleSketch.StartEditing()
 threadHoleSketch.AddCircle(0, 0, threadDiameter / 2, False)
 threadHoleSketch.StopEditing()
 part.AddExtrudeCut('ThreadHoleCut', threadHoleSketch, thickness, False)
-
 print("M10 hex nut model created.")

@@ -5,19 +5,15 @@ class SketchPoint:
         self.X = X
         self.Y = Y
         self.IsReference = IsReference
-
     def FigureObject(
         self,
     ):
         pass
-
     def SetInstance(self, IADSketchFigureFigure):
         pass
-
     def ToXml(
         self,
     ):
         pass
-
     def FromXml(self, XElementXml):
         pass

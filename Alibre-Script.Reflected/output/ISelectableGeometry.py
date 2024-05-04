@@ -3,7 +3,6 @@ class ISelectableGeometry:
         self,
     ):
         pass
-
     def SelectableObject(
         self,
     ):

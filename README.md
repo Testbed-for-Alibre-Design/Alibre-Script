@@ -1,15 +1,12 @@
 # Work in Progress 
-
 # Alibre Script examples, demos and experiments.
-
 ## Overview
-
 - Alibre-Script.Reflected
   - Python stub files generated using .NET reflection
 - Alibre-Script-Code-Assistant
   - Alibre Script custom GPT
 - Alibre-Script-VSCode
-  - VS Code workspace for Alibre Script
+  - VS Code workspace for Alibre Script development and learning
 - alibre-script.api.text
   - Alibre Script API in txt and CSV formats
 - Alibre-Script-Stub-Files
@@ -18,18 +15,18 @@
   - Library examples
 - alibre-script-examples
   - Documentation examples
-
 ## Contents
-
 ```
 C:.
 │   .gitignore
 │   Alibre-Script.code-workspace
-│   ChatGPT-README0.md
-│   ChatGPT-README1.md
-│   ChatGPT-README2.md
 │   LICENSE
 │   README.md
+│
+├───AI-Generated-Content
+│       ChatGPT-README0.md
+│       ChatGPT-README1.md
+│       ChatGPT-README2.md
 │
 ├───Alibre-Script-Code-Assistant
 │       001.py
@@ -41,6 +38,10 @@ C:.
 │       007.py
 │       008.py
 │       009.py
+│       010.py
+│       011.py
+│       012.py
+│       013.py
 │       README.md
 │
 ├───alibre-script-examples
@@ -285,13 +286,5 @@ C:.
             └───alibrescript_windows_package
                     Windows.py
                     __init__.py
-
 ```
-
-ChatGPT Generated ReadMe's
-- ["ChatGPT-README-0"](ChatGPT-README0.md)
-- ["ChatGPT-README-1"](ChatGPT-README1.md)
-- ["ChatGPT-README-2"](ChatGPT-README2.md)
-
-
 All content and branding related to Alibre, Alibre Design, and Alibre Script, including any third-party contributions, are governed by their respective licensing agreements and are the intellectual property of Alibre, LLC.

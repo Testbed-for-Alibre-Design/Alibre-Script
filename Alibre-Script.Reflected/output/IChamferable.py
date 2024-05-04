@@ -3,7 +3,6 @@ class IChamferable:
         self,
     ):
         pass
-
     def ChamferableObject(
         self,
     ):

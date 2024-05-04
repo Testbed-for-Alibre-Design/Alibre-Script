@@ -3,7 +3,6 @@ from AlibreScript import *
 # create a part and a sketch
 MyPart = Part('My Part')
 XYPlane = MyPart.GetPlane('XY-Plane')
-
 def Figures():
     # set units to mm - this is implied at the start of every script
     Units.Current = UnitTypes.Millimeters
@@ -19,7 +18,5 @@ def Figures():
     Units.Current = UnitTypes.Centimeters
     # create a circle 4.2cm in diameter
     Sketch.AddCircle(0, 0, 4.2, False)
-
 Sketch = MyPart.AddSketch('Sketch', XYPlane)
-
 Figures()

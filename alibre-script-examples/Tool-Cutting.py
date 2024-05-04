@@ -1,29 +1,22 @@
 #https://help.alibre.com/articles/#!alibre-help-v23/tool-cutting
-
 # cylinder dimensions
 Diameter = 20
 Length = 100
-
 # cutter dimensions
 CutterDiameter = 5
-
 # angle to increase by on each pass of the cutter, in degrees
 # must be a whole divisor of 180
 StepAngle = 10
-
 # total angle of cutting around the cylinder
 TotalAngle = 1440
-
 # starting distance from end of cylinder
 StartX = 10
-
 # create the cylinder
 P = Part('Cylinder')
 CylPlane = P.GetPlane('XY-Plane')
 CrossSection = P.AddSketch('Cross-Section', CylPlane)
 CrossSection.AddCircle(0,0, Diameter, False)
 P.AddExtrudeBoss('Cylinder', CrossSection, Length, False)
-
 # create the planes
 Planes = []
 NumPlanes = 180 / StepAngle
@@ -34,10 +27,8 @@ for PlaneIndex in range(0, NumPlanes):
 for PlaneIndex in range(0, NumPlanes):
   Planes.append(Planes[PlaneIndex])
 NumPlanes = NumPlanes * 2
-
 # start of helix has no offset along cylinder
 XStep = 0
-
 # create circle sketches then extrude cut 'through all'
 for Step in range(0, TotalAngle / StepAngle):
   Angle = Step * StepAngle

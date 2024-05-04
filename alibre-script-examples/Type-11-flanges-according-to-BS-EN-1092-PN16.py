@@ -1,18 +1,12 @@
 #https://help.alibre.com/articles/#!alibre-help-v23/type-11-flanges-according-to-bs-en-1092-pn16
-
-
 from math import cos,sin,radians
- 
 # Size of Flange TYPE 11 According to BS/EN-1092 PN16
- 
 #--- INPUT HERE ---#
 print('Input DN Flange size: 10, 15, 20, 25, 32, 40, 50, 65, 80, 100, 125, 150, 200, 250, 300, 350, 400, 450, 500, 600, 700, 800, 900, 1000, 1200, 1400, 1600')
 DN = int(Read())
 #--- INPUT STOP ---#
- 
 # Measurements table D,C2,H2,H3,R,A,N1,d1,f1,K,L,N from here
 #http://www.roymech.co.uk/Useful_Tables/Flanges/BSEN1092_16_Dimensions.html
-
 DNData = {}
 DNData[10] = [90,14,35,6,4,17.2,28,40,2,60,14,4]
 DNData[15] = [95,14,35,6,4,21.3,32,45,2,65,14,4]
@@ -41,8 +35,6 @@ DNData[1000] = [1255,42,120,22,16,1016,1058,1115,2,1170,42,28]
 DNData[1200] = [1485,48,130,30,16,1219,1262,1330,2,1390,48,32]
 DNData[1400] = [1685,52,145,30,16,1420,1465,1530,2,1590,48,36]
 DNData[1600] = [1930,58,160,35,16,1620,1668,1750,2,1820,56,40]
- 
- 
 D = DNData[DN][0]
 C2 = DNData[DN][1]
 H2 = DNData[DN][2]
@@ -55,13 +47,10 @@ f1 = DNData[DN][8]
 K = DNData[DN][9]
 L = DNData[DN][10]
 N = DNData[DN][11]
- 
 # all values are in millimeters
 Units.Current = UnitTypes.Millimeters
- 
 # Create part
 Flange = Part('DN%d Flange PN16' % (DN))
- 
 # body
 Profile = Flange.AddSketch('Profile', Flange.GetPlane('XY-Plane'))
 Line = Polyline()
@@ -77,18 +66,13 @@ Line.AddPoint(PolylinePoint(DN/2.,H2))
 Line.AddPoint(PolylinePoint(DN/2.,0))
 Profile.AddPolyline(Line,False)
 Flange.AddRevolveBoss('Body', Profile, Flange.GetAxis('Y-Axis'),360)
- 
 #Chamfer
 Flange.AddChamfer('Chamfer<1>',Flange.GetFace('Face<2>'),1,False)
- 
 #Fillet
 Flange.AddFillet('Fillet<1>',[Flange.GetEdge('Edge<6>'),Flange.GetEdge('Edge<7>')],R,False)
- 
 # Hole
 Hole = Flange.AddSketch('Hole',Flange.GetFace('Face<8>'))
 for i in xrange(N):
     Ang = (360/N)*i
     Hole.AddCircle(sin(radians(Ang))*K/2.,cos(radians(Ang))*K/2.,L,False)
 Flange.AddExtrudeCut('Flange Hole',Hole,C2,True)
-
-

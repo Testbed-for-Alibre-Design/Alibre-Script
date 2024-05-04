@@ -3,7 +3,6 @@ class IFilletable:
         self,
     ):
         pass
-
     def FilletableObject(
         self,
     ):

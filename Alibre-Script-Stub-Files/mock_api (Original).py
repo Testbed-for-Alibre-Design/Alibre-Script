@@ -1,5 +1,4 @@
 # Package: API
-
 class AssembledPart:
     def GetAssemblyVertices(self, *args, **kwargs):
         return None
@@ -45,7 +44,6 @@ class AssembledPart:
         return None
     def Configurations(self, *args, **kwargs):
         return None
-
 class Part:
     def RemovePoint(self, *args, **kwargs):
         return None
@@ -383,7 +381,6 @@ class Part:
         return None
     def FileTypes(self, *args, **kwargs):
         return None
-
 class AssembledSubAssembly:
     def GetSelectionAssembly(self, *args, **kwargs):
         return None
@@ -395,7 +392,6 @@ class AssembledSubAssembly:
         return None
     def Configurations(self, *args, **kwargs):
         return None
-
 class Assembly:
     def AddSubAssembly(self, *args, **kwargs):
         return None
@@ -753,7 +749,6 @@ class Assembly:
         return None
     def ConstraintBoundsType(self, *args, **kwargs):
         return None
-
 class Axis:
     def GetPart(self, *args, **kwargs):
         return None
@@ -765,7 +760,6 @@ class Axis:
         return None
     def Name(self, *args, **kwargs):
         return None
-
 class Bspline3D:
     def GetX(self, *args, **kwargs):
         return None
@@ -795,7 +789,6 @@ class Bspline3D:
         return None
     def Length(self, *args, **kwargs):
         return None
-
 class Bspline:
     def GetX(self, *args, **kwargs):
         return None
@@ -821,7 +814,6 @@ class Bspline:
         return None
     def Length(self, *args, **kwargs):
         return None
-
 class Circle:
     def #ctor(self, *args, **kwargs):
         return None
@@ -835,7 +827,6 @@ class Circle:
         return None
     def Length(self, *args, **kwargs):
         return None
-
 class CircularArc3D:
     def #ctor(self, *args, **kwargs):
         return None
@@ -857,7 +848,6 @@ class CircularArc3D:
         return None
     def ArcType(self, *args, **kwargs):
         return None
-
 class CircularArc:
     def #ctor(self, *args, **kwargs):
         return None
@@ -885,7 +875,6 @@ class CircularArc:
         return None
     def ArcType(self, *args, **kwargs):
         return None
-
 class CSharp:
     def CompileAndRun(self, *args, **kwargs):
         return None
@@ -897,7 +886,6 @@ class CSharp:
         return None
     def Run(self, *args, **kwargs):
         return None
-
 class Ellipse:
     def #ctor(self, *args, **kwargs):
         return None
@@ -913,7 +901,6 @@ class Ellipse:
         return None
     def IsReference(self, *args, **kwargs):
         return None
-
 class EllipticalArc:
     def #ctor(self, *args, **kwargs):
         return None
@@ -937,7 +924,6 @@ class EllipticalArc:
         return None
     def IsReference(self, *args, **kwargs):
         return None
-
 class GlobalParameters:
     def GetParameter(self, *args, **kwargs):
         return None
@@ -973,21 +959,17 @@ class GlobalParameters:
         return None
     def Configurations(self, *args, **kwargs):
         return None
-
 class IAxis:
     def GetOccurrence(self, *args, **kwargs):
         return None
-
 class IPlane:
     def GetOccurrence(self, *args, **kwargs):
         return None
-
 class IPoint:
     def PointObject(self, *args, **kwargs):
         return None
     def GetOccurrence(self, *args, **kwargs):
         return None
-
 class Line3D:
     def #ctor(self, *args, **kwargs):
         return None
@@ -1003,7 +985,6 @@ class Line3D:
         return None
     def End(self, *args, **kwargs):
         return None
-
 class Polyline3D:
     def AddPoint(self, *args, **kwargs):
         return None
@@ -1029,7 +1010,6 @@ class Polyline3D:
         return None
     def #ctor(self, *args, **kwargs):
         return None
-
 class PolylinePoint3D:
     def Offset(self, *args, **kwargs):
         return None
@@ -1045,7 +1025,6 @@ class PolylinePoint3D:
         return None
     def Z(self, *args, **kwargs):
         return None
-
 class TwoD:
     def RotatePoint(self, *args, **kwargs):
         return None
@@ -1053,7 +1032,6 @@ class TwoD:
         return None
     def NormalizeVector(self, *args, **kwargs):
         return None
-
 class Windows:
     def CloseForm(self, *args, **kwargs):
         return None
@@ -1091,7 +1069,6 @@ class Windows:
         return None
     def #ctor(self, *args, **kwargs):
         return None
-
 class Configuration:
     def SetLocks(self, *args, **kwargs):
         return None
@@ -1105,7 +1082,6 @@ class Configuration:
         return None
     def IsActive(self, *args, **kwargs):
         return None
-
 class Edge:
     def GetPart(self, *args, **kwargs):
         return None
@@ -1119,7 +1095,6 @@ class Edge:
         return None
     def Length(self, *args, **kwargs):
         return None
-
 class Face:
     def GetPart(self, *args, **kwargs):
         return None
@@ -1141,13 +1116,11 @@ class Face:
         return None
     def Name(self, *args, **kwargs):
         return None
-
 class Feature:
     def SetColor(self, *args, **kwargs):
         return None
     def Name(self, *args, **kwargs):
         return None
-
 class Sketch:
     def GetPart(self, *args, **kwargs):
         return None
@@ -1259,7 +1232,6 @@ class Sketch:
         return None
     def Constraints(self, *args, **kwargs):
         return None
-
 class GearSketch:
     def NumberofTeeth(self, *args, **kwargs):
         return None
@@ -1273,7 +1245,6 @@ class GearSketch:
         return None
     def CenterY(self, *args, **kwargs):
         return None
-
 class Line:
     def #ctor(self, *args, **kwargs):
         return None
@@ -1289,13 +1260,11 @@ class Line:
         return None
     def End(self, *args, **kwargs):
         return None
-
 class Material:
     def ABS(self, *args, **kwargs):
         return None
     def PLA(self, *args, **kwargs):
         return None
-
 class Parameter:
     def AttachToExcel(self, *args, **kwargs):
         return None
@@ -1319,7 +1288,6 @@ class Parameter:
         return None
     def RawValue(self, *args, **kwargs):
         return None
-
 class Plane:
     def GetPart(self, *args, **kwargs):
         return None
@@ -1333,7 +1301,6 @@ class Plane:
         return None
     def Name(self, *args, **kwargs):
         return None
-
 class Point:
     def GetPart(self, *args, **kwargs):
         return None
@@ -1353,7 +1320,6 @@ class Point:
         return None
     def Z(self, *args, **kwargs):
         return None
-
 class Polyline:
     def AddPoint(self, *args, **kwargs):
         return None
@@ -1391,7 +1357,6 @@ class Polyline:
         return None
     def #ctor(self, *args, **kwargs):
         return None
-
 class PolylinePoint:
     def Offset(self, *args, **kwargs):
         return None
@@ -1407,7 +1372,6 @@ class PolylinePoint:
         return None
     def Y(self, *args, **kwargs):
         return None
-
 class Sketch3D:
     def GetPart(self, *args, **kwargs):
         return None
@@ -1447,7 +1411,6 @@ class Sketch3D:
         return None
     def Figures(self, *args, **kwargs):
         return None
-
 class SketchPoint:
     def #ctor(self, *args, **kwargs):
         return None
@@ -1457,7 +1420,6 @@ class SketchPoint:
         return None
     def IsReference(self, *args, **kwargs):
         return None
-
 class SketchPoint3D:
     def #ctor(self, *args, **kwargs):
         return None
@@ -1469,17 +1431,14 @@ class SketchPoint3D:
         return None
     def IsReference(self, *args, **kwargs):
         return None
-
 class ThreeD:
     def GetPerpendicularVector(self, *args, **kwargs):
         return None
     def TransformPointUsingVectors(self, *args, **kwargs):
         return None
-
 class Units:
     def Current(self, *args, **kwargs):
         return None
-
 class Vertex:
     def GetPart(self, *args, **kwargs):
         return None
@@ -1493,4 +1452,3 @@ class Vertex:
         return None
     def Z(self, *args, **kwargs):
         return None
-

@@ -3,12 +3,10 @@ class IPoint:
         self,
     ):
         pass
-
     def PointObject(
         self,
     ):
         pass
-
     def GetOccurrence(
         self,
     ):

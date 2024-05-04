@@ -3,7 +3,6 @@ class ISketchSurface:
         self,
     ):
         pass
-
     def SurfaceObject(
         self,
     ):

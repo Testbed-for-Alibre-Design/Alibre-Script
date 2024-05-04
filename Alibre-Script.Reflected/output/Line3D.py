@@ -7,14 +7,11 @@ class Line3D:
         self.Length = Length
         self.Start = Start
         self.End = End
-
     def SetInstance(self, IAD3DSketchLineLine):
         pass
-
     def ToXml(
         self,
     ):
         pass
-
     def FromXml(self, XElementXml):
         pass

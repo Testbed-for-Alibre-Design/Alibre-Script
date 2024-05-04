@@ -95,44 +95,34 @@ class AssembledSubAssembly:
         self.Material = Material
         self.Description = Description
         self.Number = Number
-
     def GetSelectionAssembly(
         self,
     ):
         pass
-
     def SetOccurrence(self, IADOccurrenceOccurrence):
         pass
-
     def GetOccurrence(
         self,
     ):
         pass
-
     def GetMappedOccurrence(self, IADAssemblySessionAssembly):
         pass
-
     def SetParentAssembly(self, AssemblyParentAssembly):
         pass
-
     def GetParentAssembly(
         self,
     ):
         pass
-
     def GetConfiguration(self, StringName):
         pass
-
     def GetAssembledPath(
         self,
     ):
         pass
-
     def AddSubAssembly(
         self, StringFileName, DoubleOffsetX, DoubleOffsetY, DoubleOffsetZ
     ):
         pass
-
     def AddSubAssembly(
         self,
         StringFileName,
@@ -145,7 +135,6 @@ class AssembledSubAssembly:
         BooleanTranslationFirst,
     ):
         pass
-
     def AddMateConstraint(
         self,
         DoubleDistance,
@@ -155,7 +144,6 @@ class AssembledSubAssembly:
         IConstrainableItemB,
     ):
         pass
-
     def AddMateConstraint(
         self,
         DoubleDistance,
@@ -167,7 +155,6 @@ class AssembledSubAssembly:
         StringName,
     ):
         pass
-
     def AddMateConstraint2(
         self,
         DoubleDistance1,
@@ -181,7 +168,6 @@ class AssembledSubAssembly:
         ConstraintBoundsTypeBoundsType,
     ):
         pass
-
     def AddFastenerConstraint(
         self,
         DoubleDistance,
@@ -193,7 +179,6 @@ class AssembledSubAssembly:
         StringName,
     ):
         pass
-
     def AddFastenerConstraint2(
         self,
         DoubleDistance1,
@@ -207,7 +192,6 @@ class AssembledSubAssembly:
         ConstraintBoundsTypeBoundsType,
     ):
         pass
-
     def AddAlignConstraint(
         self,
         DoubleDistance,
@@ -217,7 +201,6 @@ class AssembledSubAssembly:
         IConstrainableItemB,
     ):
         pass
-
     def AddAlignConstraint(
         self,
         DoubleDistance,
@@ -229,7 +212,6 @@ class AssembledSubAssembly:
         StringName,
     ):
         pass
-
     def AddAlignConstraint2(
         self,
         DoubleDistance1,
@@ -243,7 +225,6 @@ class AssembledSubAssembly:
         ConstraintBoundsTypeBoundsType,
     ):
         pass
-
     def AddOrientConstraint(
         self,
         DoubleValue,
@@ -253,7 +234,6 @@ class AssembledSubAssembly:
         IConstrainableItemB,
     ):
         pass
-
     def AddOrientConstraint(
         self,
         DoubleValue,
@@ -265,7 +245,6 @@ class AssembledSubAssembly:
         StringName,
     ):
         pass
-
     def AddAngleConstraint(
         self,
         DoubleAngle,
@@ -275,7 +254,6 @@ class AssembledSubAssembly:
         IConstrainableItemB,
     ):
         pass
-
     def AddAngleConstraint(
         self,
         DoubleAngle,
@@ -287,7 +265,6 @@ class AssembledSubAssembly:
         StringName,
     ):
         pass
-
     def AddAngleConstraint2(
         self,
         DoubleAngle1,
@@ -301,7 +278,6 @@ class AssembledSubAssembly:
         ConstraintBoundsTypeBoundsType,
     ):
         pass
-
     def AddGearConstraint(
         self,
         DoubleRatioA,
@@ -314,7 +290,6 @@ class AssembledSubAssembly:
         StringName,
     ):
         pass
-
     def AddRackAndPinionConstraint(
         self,
         DoublePitchDiameter,
@@ -326,7 +301,6 @@ class AssembledSubAssembly:
         StringName,
     ):
         pass
-
     def AddScrewConstraint(
         self,
         DoubleThreadPitch,
@@ -338,7 +312,6 @@ class AssembledSubAssembly:
         StringName,
     ):
         pass
-
     def AddTangentConstraint(
         self,
         DoubleDistance,
@@ -349,7 +322,6 @@ class AssembledSubAssembly:
         BooleanOutside,
     ):
         pass
-
     def AddTangentConstraint(
         self,
         DoubleDistance,
@@ -362,44 +334,32 @@ class AssembledSubAssembly:
         StringName,
     ):
         pass
-
     def CreateUniqueName(self, StringBaseName):
         pass
-
     def ExportSTL(self, StringFileName):
         pass
-
     def ExportSTEP203(self, StringFileName):
         pass
-
     def ExportSTEP214(self, StringFileName):
         pass
-
     def ExportIGES(self, StringFileName):
         pass
-
     def ExportSAT(self, StringFileName, Int32Version, BooleanSaveColors):
         pass
-
     def ExportBIP(self, StringFileName):
         pass
-
     def SetUserData(self, StringName, PythonDictionaryDict):
         pass
-
     def GetUserData(self, StringName):
         pass
-
     def PauseUpdating(
         self,
     ):
         pass
-
     def ResumeUpdating(
         self,
     ):
         pass
-
     def AddPoint(
         self,
         StringName,
@@ -409,23 +369,18 @@ class AssembledSubAssembly:
         DoubleZOffset,
     ):
         pass
-
     def AddPoint(
         self, StringName, IPointPointOrVertex1, IPointPointOrVertex2, DoubleRatio
     ):
         pass
-
     def AddPoint(self, StringName, IAxisAxisOrEdge1, IAxisAxisOrEdge2):
         pass
-
     def AddPoint(
         self, StringName, IPlanePlaneOrFace1, IPlanePlaneOrFace2, IPlanePlaneOrFace3
     ):
         pass
-
     def AddPoint(self, StringName, IAxisAxisOrEdge, IPlanePlaneOrFace):
         pass
-
     def AddPoint(
         self,
         StringName,
@@ -435,113 +390,80 @@ class AssembledSubAssembly:
         DoubleYOffset,
     ):
         pass
-
     def AddPoint(self, StringName, EdgeTargetEdge, DoubleRatio):
         pass
-
     def AddPointFromCircularEdge(self, StringName, EdgeTargetEdge):
         pass
-
     def AddPointFromToroidalFace(self, StringName, FaceTargetFace):
         pass
-
     def GetPlane(self, StringName):
         pass
-
     def GetPlane(self, IADDesignPlaneDesignPlane):
         pass
-
     def GetAxis(self, StringName):
         pass
-
     def GetAxis(self, IADDesignAxisDesignAxis):
         pass
-
     def GetPoint(self, StringName):
         pass
-
     def GetPoint(self, IADDesignPointDesignPoint):
         pass
-
     def GetParameter(self, StringName):
         pass
-
     def GetCustomProperty(self, StringName):
         pass
-
     def SetCustomProperty(self, StringName, StringValue):
         pass
-
     def GetConfiguration(self, StringName):
         pass
-
     def GetActiveConfiguration(
         self,
     ):
         pass
-
     def GetSelection(
         self,
     ):
         pass
-
     def AddPlane(self, StringName, ISketchSurfaceSourcePlane, DoubleOffset):
         pass
-
     def AddPlane(self, StringName, ListNormalVector, ListPointonPlane):
         pass
-
     def AddPlane(
         self, StringName, ISketchSurfaceSourcePlane, AxisRotationAxis, DoubleAngle
     ):
         pass
-
     def AddParameter(self, StringName, ParameterTypesType, DoubleValue):
         pass
-
     def AddParameter(self, StringName, ParameterTypesType, StringEquation):
         pass
-
     def AddConfiguration(self, StringName):
         pass
-
     def AddConfiguration(self, StringName, StringBaseConfigurationName):
         pass
-
     def AddPlane(self, StringName, ListPoint1, ListPoint2, ListPoint3):
         pass
-
     def AddAxis(self, StringName, ISketchSurfacePlane1, ISketchSurfacePlane2):
         pass
-
     def AddAxis(self, StringName, ListPoint1, ListPoint2):
         pass
-
     def AddPoint(self, StringName, DoubleX, DoubleY, DoubleZ):
         pass
-
     def AddPoints(self, StringPrefix, ListPoints):
         pass
-
     def Regenerate(
         self,
     ):
         pass
-
     def Save(
         self,
     ):
         pass
-
     def Save(self, StringFolder):
         pass
-
     def SaveAs(self, StringFolder, StringNewName):
         pass
-
     def SaveAll(self, StringFolder):
         pass
-
     def SaveSnapshot(
         self,
         StringFileName,
@@ -551,23 +473,18 @@ class AssembledSubAssembly:
         BooleanUseWidthandHeight,
     ):
         pass
-
     def Close(
         self,
     ):
         pass
-
     def SaveThumbnail(self, StringFileName, Int32Width, Int32Height):
         pass
-
     def AddPart(self, StringFolder, StringName):
         pass
-
     def AddPart(
         self, StringFolder, StringName, DoubleOffsetX, DoubleOffsetY, DoubleOffsetZ
     ):
         pass
-
     def AddPart(
         self,
         StringFolder,
@@ -581,19 +498,14 @@ class AssembledSubAssembly:
         BooleanTranslationFirst,
     ):
         pass
-
     def AddPart(self, PartPart):
         pass
-
     def AddPart(self, PartPart, DoubleOffsetX, DoubleOffsetY, DoubleOffsetZ):
         pass
-
     def AddPart(self, StringFileName):
         pass
-
     def AddPart(self, StringFileName, DoubleOffsetX, DoubleOffsetY, DoubleOffsetZ):
         pass
-
     def AddPart(
         self,
         StringFileName,
@@ -606,18 +518,14 @@ class AssembledSubAssembly:
         BooleanTranslationFirst,
     ):
         pass
-
     def GetPartOrientation(self, AssembledPartPart):
         pass
-
     def GetPartOrientation(self, StringPartName):
         pass
-
     def DisplayUnits(
         self,
     ):
         pass
-
     def AddPart(
         self,
         PartPart,
@@ -630,24 +538,18 @@ class AssembledSubAssembly:
         BooleanTranslationFirst,
     ):
         pass
-
     def AddNewPart(self, StringName, DoubleX, DoubleY, DoubleZ):
         pass
-
     def GetPart(self, StringName):
         pass
-
     def GetSubAssembly(self, StringName):
         pass
-
     def DuplicatePart(self, StringName, DoubleOffsetX, DoubleOffsetY, DoubleOffsetZ):
         pass
-
     def DuplicatePart(
         self, AssembledPartPart, DoubleOffsetX, DoubleOffsetY, DoubleOffsetZ
     ):
         pass
-
     def DuplicatePart(
         self,
         StringName,
@@ -660,7 +562,6 @@ class AssembledSubAssembly:
         BooleanTranslationFirst,
     ):
         pass
-
     def DuplicatePart(
         self,
         AssembledPartPart,
@@ -673,7 +574,6 @@ class AssembledSubAssembly:
         BooleanTranslationFirst,
     ):
         pass
-
     def DuplicatePart(
         self,
         IADOccurrencePartOcc,
@@ -686,7 +586,6 @@ class AssembledSubAssembly:
         BooleanTranslationFirst,
     ):
         pass
-
     def DuplicateSubAssembly(
         self,
         AssembledSubAssemblySubAssembly,
@@ -695,12 +594,10 @@ class AssembledSubAssembly:
         DoubleOffsetZ,
     ):
         pass
-
     def DuplicateSubAssembly(
         self, StringName, DoubleOffsetX, DoubleOffsetY, DoubleOffsetZ
     ):
         pass
-
     def DuplicateSubAssembly(
         self,
         AssembledSubAssemblySubAssembly,
@@ -713,7 +610,6 @@ class AssembledSubAssembly:
         BooleanTranslationFirst,
     ):
         pass
-
     def DuplicateSubAssembly(
         self,
         StringName,
@@ -726,7 +622,6 @@ class AssembledSubAssembly:
         BooleanTranslationFirst,
     ):
         pass
-
     def DuplicateSubAssembly(
         self,
         IADOccurrenceAssemOcc,
@@ -739,61 +634,42 @@ class AssembledSubAssembly:
         BooleanTranslationFirst,
     ):
         pass
-
     def AnchorPart(self, StringName):
         pass
-
     def AnchorPart(self, AssembledPartPart):
         pass
-
     def AnchorSubAssembly(self, StringName):
         pass
-
     def UnanchorPart(self, StringName):
         pass
-
     def UnanchorPart(self, AssembledPartPart):
         pass
-
     def UnanchorSubAssembly(self, StringName):
         pass
-
     def HidePart(self, StringName):
         pass
-
     def HidePart(self, AssembledPartPart):
         pass
-
     def HideSubAssembly(self, StringName):
         pass
-
     def ShowPart(self, StringName):
         pass
-
     def ShowPart(self, AssembledPartPart):
         pass
-
     def ShowSubAssembly(self, StringName):
         pass
-
     def SuppressPart(self, StringName):
         pass
-
     def SuppressPart(self, AssembledPartPart):
         pass
-
     def SuppressSubAssembly(self, StringName):
         pass
-
     def UnsuppressPart(self, StringName):
         pass
-
     def UnsuppressPart(self, AssembledPartPart):
         pass
-
     def UnsuppressSubAssembly(self, StringName):
         pass
-
     def MovePart(
         self,
         StringName,
@@ -803,7 +679,6 @@ class AssembledSubAssembly:
         BooleanApplyConstraints,
     ):
         pass
-
     def MovePart(
         self,
         AssembledPartPart,
@@ -813,7 +688,6 @@ class AssembledSubAssembly:
         BooleanApplyConstraints,
     ):
         pass
-
     def MovePart(
         self,
         IADOccurrencePartOcc,
@@ -823,7 +697,6 @@ class AssembledSubAssembly:
         BooleanApplyConstraints,
     ):
         pass
-
     def MoveSubAssembly(
         self,
         StringName,
@@ -833,7 +706,6 @@ class AssembledSubAssembly:
         BooleanApplyConstraints,
     ):
         pass
-
     def MoveSubAssembly(
         self,
         AssembledSubAssemblySubAssembly,
@@ -843,7 +715,6 @@ class AssembledSubAssembly:
         BooleanApplyConstraints,
     ):
         pass
-
     def MoveSubAssembly(
         self,
         IADOccurrenceAssemOcc,
@@ -853,7 +724,6 @@ class AssembledSubAssembly:
         BooleanApplyConstraints,
     ):
         pass
-
     def MoveParts(
         self,
         ListNames,
@@ -863,7 +733,6 @@ class AssembledSubAssembly:
         BooleanApplyConstraints,
     ):
         pass
-
     def MoveSubAssemblies(
         self,
         ListNames,
@@ -873,7 +742,6 @@ class AssembledSubAssembly:
         BooleanApplyConstraints,
     ):
         pass
-
     def RotatePart(
         self,
         StringName,
@@ -883,7 +751,6 @@ class AssembledSubAssembly:
         BooleanApplyConstraints,
     ):
         pass
-
     def RotatePart(
         self,
         AssembledPartPart,
@@ -893,7 +760,6 @@ class AssembledSubAssembly:
         BooleanApplyConstraints,
     ):
         pass
-
     def RotatePart(
         self,
         IADOccurrencePartOcc,
@@ -903,7 +769,6 @@ class AssembledSubAssembly:
         BooleanApplyConstraints,
     ):
         pass
-
     def RotateSubAssembly(
         self,
         StringName,
@@ -913,7 +778,6 @@ class AssembledSubAssembly:
         BooleanApplyConstraints,
     ):
         pass
-
     def RotateSubAssembly(
         self,
         AssembledSubAssemblySubAssembly,
@@ -923,7 +787,6 @@ class AssembledSubAssembly:
         BooleanApplyConstraints,
     ):
         pass
-
     def RotateSubAssembly(
         self,
         IADOccurrenceAssemOcc,
@@ -933,7 +796,6 @@ class AssembledSubAssembly:
         BooleanApplyConstraints,
     ):
         pass
-
     def RotateParts(
         self,
         ListNames,
@@ -943,7 +805,6 @@ class AssembledSubAssembly:
         BooleanApplyConstraints,
     ):
         pass
-
     def RotateSubAssemblies(
         self,
         ListNames,
@@ -953,18 +814,14 @@ class AssembledSubAssembly:
         BooleanApplyConstraints,
     ):
         pass
-
     def AddNewSubAssembly(self, StringName, DoubleX, DoubleY, DoubleZ):
         pass
-
     def AddSubAssembly(self, AssemblyAssembly):
         pass
-
     def AddSubAssembly(
         self, AssemblyAssembly, DoubleOffsetX, DoubleOffsetY, DoubleOffsetZ
     ):
         pass
-
     def AddSubAssembly(
         self,
         AssemblyAssembly,
@@ -977,15 +834,12 @@ class AssembledSubAssembly:
         BooleanTranslationFirst,
     ):
         pass
-
     def AddSubAssembly(self, StringFolder, StringName):
         pass
-
     def AddSubAssembly(
         self, StringFolder, StringName, DoubleOffsetX, DoubleOffsetY, DoubleOffsetZ
     ):
         pass
-
     def AddSubAssembly(
         self,
         StringFolder,
@@ -999,7 +853,6 @@ class AssembledSubAssembly:
         BooleanTranslationFirst,
     ):
         pass
-
     def AddSubAssembly(self, StringFileName):
         pass
 class Assembly:
@@ -1099,12 +952,10 @@ class Assembly:
         self.Material = Material
         self.Description = Description
         self.Number = Number
-
     def AddSubAssembly(
         self, StringFileName, DoubleOffsetX, DoubleOffsetY, DoubleOffsetZ
     ):
         pass
-
     def AddSubAssembly(
         self,
         StringFileName,
@@ -1117,7 +968,6 @@ class Assembly:
         BooleanTranslationFirst,
     ):
         pass
-
     def AddMateConstraint(
         self,
         DoubleDistance,
@@ -1127,7 +977,6 @@ class Assembly:
         IConstrainableItemB,
     ):
         pass
-
     def AddMateConstraint(
         self,
         DoubleDistance,
@@ -1139,7 +988,6 @@ class Assembly:
         StringName,
     ):
         pass
-
     def AddMateConstraint2(
         self,
         DoubleDistance1,
@@ -1153,7 +1001,6 @@ class Assembly:
         ConstraintBoundsTypeBoundsType,
     ):
         pass
-
     def AddFastenerConstraint(
         self,
         DoubleDistance,
@@ -1165,7 +1012,6 @@ class Assembly:
         StringName,
     ):
         pass
-
     def AddFastenerConstraint2(
         self,
         DoubleDistance1,
@@ -1179,7 +1025,6 @@ class Assembly:
         ConstraintBoundsTypeBoundsType,
     ):
         pass
-
     def AddAlignConstraint(
         self,
         DoubleDistance,
@@ -1189,7 +1034,6 @@ class Assembly:
         IConstrainableItemB,
     ):
         pass
-
     def AddAlignConstraint(
         self,
         DoubleDistance,
@@ -1201,7 +1045,6 @@ class Assembly:
         StringName,
     ):
         pass
-
     def AddAlignConstraint2(
         self,
         DoubleDistance1,
@@ -1215,7 +1058,6 @@ class Assembly:
         ConstraintBoundsTypeBoundsType,
     ):
         pass
-
     def AddOrientConstraint(
         self,
         DoubleValue,
@@ -1225,7 +1067,6 @@ class Assembly:
         IConstrainableItemB,
     ):
         pass
-
     def AddOrientConstraint(
         self,
         DoubleValue,
@@ -1237,7 +1078,6 @@ class Assembly:
         StringName,
     ):
         pass
-
     def AddAngleConstraint(
         self,
         DoubleAngle,
@@ -1247,7 +1087,6 @@ class Assembly:
         IConstrainableItemB,
     ):
         pass
-
     def AddAngleConstraint(
         self,
         DoubleAngle,
@@ -1259,7 +1098,6 @@ class Assembly:
         StringName,
     ):
         pass
-
     def AddAngleConstraint2(
         self,
         DoubleAngle1,
@@ -1273,7 +1111,6 @@ class Assembly:
         ConstraintBoundsTypeBoundsType,
     ):
         pass
-
     def AddGearConstraint(
         self,
         DoubleRatioA,
@@ -1286,7 +1123,6 @@ class Assembly:
         StringName,
     ):
         pass
-
     def AddRackAndPinionConstraint(
         self,
         DoublePitchDiameter,
@@ -1298,7 +1134,6 @@ class Assembly:
         StringName,
     ):
         pass
-
     def AddScrewConstraint(
         self,
         DoubleThreadPitch,
@@ -1310,7 +1145,6 @@ class Assembly:
         StringName,
     ):
         pass
-
     def AddTangentConstraint(
         self,
         DoubleDistance,
@@ -1321,7 +1155,6 @@ class Assembly:
         BooleanOutside,
     ):
         pass
-
     def AddTangentConstraint(
         self,
         DoubleDistance,
@@ -1334,44 +1167,32 @@ class Assembly:
         StringName,
     ):
         pass
-
     def CreateUniqueName(self, StringBaseName):
         pass
-
     def ExportSTL(self, StringFileName):
         pass
-
     def ExportSTEP203(self, StringFileName):
         pass
-
     def ExportSTEP214(self, StringFileName):
         pass
-
     def ExportIGES(self, StringFileName):
         pass
-
     def ExportSAT(self, StringFileName, Int32Version, BooleanSaveColors):
         pass
-
     def ExportBIP(self, StringFileName):
         pass
-
     def SetUserData(self, StringName, PythonDictionaryDict):
         pass
-
     def GetUserData(self, StringName):
         pass
-
     def PauseUpdating(
         self,
     ):
         pass
-
     def ResumeUpdating(
         self,
     ):
         pass
-
     def AddPoint(
         self,
         StringName,
@@ -1381,23 +1202,18 @@ class Assembly:
         DoubleZOffset,
     ):
         pass
-
     def AddPoint(
         self, StringName, IPointPointOrVertex1, IPointPointOrVertex2, DoubleRatio
     ):
         pass
-
     def AddPoint(self, StringName, IAxisAxisOrEdge1, IAxisAxisOrEdge2):
         pass
-
     def AddPoint(
         self, StringName, IPlanePlaneOrFace1, IPlanePlaneOrFace2, IPlanePlaneOrFace3
     ):
         pass
-
     def AddPoint(self, StringName, IAxisAxisOrEdge, IPlanePlaneOrFace):
         pass
-
     def AddPoint(
         self,
         StringName,
@@ -1407,113 +1223,80 @@ class Assembly:
         DoubleYOffset,
     ):
         pass
-
     def AddPoint(self, StringName, EdgeTargetEdge, DoubleRatio):
         pass
-
     def AddPointFromCircularEdge(self, StringName, EdgeTargetEdge):
         pass
-
     def AddPointFromToroidalFace(self, StringName, FaceTargetFace):
         pass
-
     def GetPlane(self, StringName):
         pass
-
     def GetPlane(self, IADDesignPlaneDesignPlane):
         pass
-
     def GetAxis(self, StringName):
         pass
-
     def GetAxis(self, IADDesignAxisDesignAxis):
         pass
-
     def GetPoint(self, StringName):
         pass
-
     def GetPoint(self, IADDesignPointDesignPoint):
         pass
-
     def GetParameter(self, StringName):
         pass
-
     def GetCustomProperty(self, StringName):
         pass
-
     def SetCustomProperty(self, StringName, StringValue):
         pass
-
     def GetConfiguration(self, StringName):
         pass
-
     def GetActiveConfiguration(
         self,
     ):
         pass
-
     def GetSelection(
         self,
     ):
         pass
-
     def AddPlane(self, StringName, ISketchSurfaceSourcePlane, DoubleOffset):
         pass
-
     def AddPlane(self, StringName, ListNormalVector, ListPointonPlane):
         pass
-
     def AddPlane(
         self, StringName, ISketchSurfaceSourcePlane, AxisRotationAxis, DoubleAngle
     ):
         pass
-
     def AddParameter(self, StringName, ParameterTypesType, DoubleValue):
         pass
-
     def AddParameter(self, StringName, ParameterTypesType, StringEquation):
         pass
-
     def AddConfiguration(self, StringName):
         pass
-
     def AddConfiguration(self, StringName, StringBaseConfigurationName):
         pass
-
     def AddPlane(self, StringName, ListPoint1, ListPoint2, ListPoint3):
         pass
-
     def AddAxis(self, StringName, ISketchSurfacePlane1, ISketchSurfacePlane2):
         pass
-
     def AddAxis(self, StringName, ListPoint1, ListPoint2):
         pass
-
     def AddPoint(self, StringName, DoubleX, DoubleY, DoubleZ):
         pass
-
     def AddPoints(self, StringPrefix, ListPoints):
         pass
-
     def Regenerate(
         self,
     ):
         pass
-
     def Save(
         self,
     ):
         pass
-
     def Save(self, StringFolder):
         pass
-
     def SaveAs(self, StringFolder, StringNewName):
         pass
-
     def SaveAll(self, StringFolder):
         pass
-
     def SaveSnapshot(
         self,
         StringFileName,
@@ -1523,23 +1306,18 @@ class Assembly:
         BooleanUseWidthandHeight,
     ):
         pass
-
     def Close(
         self,
     ):
         pass
-
     def SaveThumbnail(self, StringFileName, Int32Width, Int32Height):
         pass
-
     def AddPart(self, StringFolder, StringName):
         pass
-
     def AddPart(
         self, StringFolder, StringName, DoubleOffsetX, DoubleOffsetY, DoubleOffsetZ
     ):
         pass
-
     def AddPart(
         self,
         StringFolder,
@@ -1553,19 +1331,14 @@ class Assembly:
         BooleanTranslationFirst,
     ):
         pass
-
     def AddPart(self, PartPart):
         pass
-
     def AddPart(self, PartPart, DoubleOffsetX, DoubleOffsetY, DoubleOffsetZ):
         pass
-
     def AddPart(self, StringFileName):
         pass
-
     def AddPart(self, StringFileName, DoubleOffsetX, DoubleOffsetY, DoubleOffsetZ):
         pass
-
     def AddPart(
         self,
         StringFileName,
@@ -1578,18 +1351,14 @@ class Assembly:
         BooleanTranslationFirst,
     ):
         pass
-
     def GetPartOrientation(self, AssembledPartPart):
         pass
-
     def GetPartOrientation(self, StringPartName):
         pass
-
     def DisplayUnits(
         self,
     ):
         pass
-
     def AddPart(
         self,
         PartPart,
@@ -1602,24 +1371,18 @@ class Assembly:
         BooleanTranslationFirst,
     ):
         pass
-
     def AddNewPart(self, StringName, DoubleX, DoubleY, DoubleZ):
         pass
-
     def GetPart(self, StringName):
         pass
-
     def GetSubAssembly(self, StringName):
         pass
-
     def DuplicatePart(self, StringName, DoubleOffsetX, DoubleOffsetY, DoubleOffsetZ):
         pass
-
     def DuplicatePart(
         self, AssembledPartPart, DoubleOffsetX, DoubleOffsetY, DoubleOffsetZ
     ):
         pass
-
     def DuplicatePart(
         self,
         StringName,
@@ -1632,7 +1395,6 @@ class Assembly:
         BooleanTranslationFirst,
     ):
         pass
-
     def DuplicatePart(
         self,
         AssembledPartPart,
@@ -1645,7 +1407,6 @@ class Assembly:
         BooleanTranslationFirst,
     ):
         pass
-
     def DuplicatePart(
         self,
         IADOccurrencePartOcc,
@@ -1658,7 +1419,6 @@ class Assembly:
         BooleanTranslationFirst,
     ):
         pass
-
     def DuplicateSubAssembly(
         self,
         AssembledSubAssemblySubAssembly,
@@ -1667,12 +1427,10 @@ class Assembly:
         DoubleOffsetZ,
     ):
         pass
-
     def DuplicateSubAssembly(
         self, StringName, DoubleOffsetX, DoubleOffsetY, DoubleOffsetZ
     ):
         pass
-
     def DuplicateSubAssembly(
         self,
         AssembledSubAssemblySubAssembly,
@@ -1685,7 +1443,6 @@ class Assembly:
         BooleanTranslationFirst,
     ):
         pass
-
     def DuplicateSubAssembly(
         self,
         StringName,
@@ -1698,7 +1455,6 @@ class Assembly:
         BooleanTranslationFirst,
     ):
         pass
-
     def DuplicateSubAssembly(
         self,
         IADOccurrenceAssemOcc,
@@ -1711,61 +1467,42 @@ class Assembly:
         BooleanTranslationFirst,
     ):
         pass
-
     def AnchorPart(self, StringName):
         pass
-
     def AnchorPart(self, AssembledPartPart):
         pass
-
     def AnchorSubAssembly(self, StringName):
         pass
-
     def UnanchorPart(self, StringName):
         pass
-
     def UnanchorPart(self, AssembledPartPart):
         pass
-
     def UnanchorSubAssembly(self, StringName):
         pass
-
     def HidePart(self, StringName):
         pass
-
     def HidePart(self, AssembledPartPart):
         pass
-
     def HideSubAssembly(self, StringName):
         pass
-
     def ShowPart(self, StringName):
         pass
-
     def ShowPart(self, AssembledPartPart):
         pass
-
     def ShowSubAssembly(self, StringName):
         pass
-
     def SuppressPart(self, StringName):
         pass
-
     def SuppressPart(self, AssembledPartPart):
         pass
-
     def SuppressSubAssembly(self, StringName):
         pass
-
     def UnsuppressPart(self, StringName):
         pass
-
     def UnsuppressPart(self, AssembledPartPart):
         pass
-
     def UnsuppressSubAssembly(self, StringName):
         pass
-
     def MovePart(
         self,
         StringName,
@@ -1775,7 +1512,6 @@ class Assembly:
         BooleanApplyConstraints,
     ):
         pass
-
     def MovePart(
         self,
         AssembledPartPart,
@@ -1785,7 +1521,6 @@ class Assembly:
         BooleanApplyConstraints,
     ):
         pass
-
     def MovePart(
         self,
         IADOccurrencePartOcc,
@@ -1795,7 +1530,6 @@ class Assembly:
         BooleanApplyConstraints,
     ):
         pass
-
     def MoveSubAssembly(
         self,
         StringName,
@@ -1805,7 +1539,6 @@ class Assembly:
         BooleanApplyConstraints,
     ):
         pass
-
     def MoveSubAssembly(
         self,
         AssembledSubAssemblySubAssembly,
@@ -1815,7 +1548,6 @@ class Assembly:
         BooleanApplyConstraints,
     ):
         pass
-
     def MoveSubAssembly(
         self,
         IADOccurrenceAssemOcc,
@@ -1825,7 +1557,6 @@ class Assembly:
         BooleanApplyConstraints,
     ):
         pass
-
     def MoveParts(
         self,
         ListNames,
@@ -1835,7 +1566,6 @@ class Assembly:
         BooleanApplyConstraints,
     ):
         pass
-
     def MoveSubAssemblies(
         self,
         ListNames,
@@ -1845,7 +1575,6 @@ class Assembly:
         BooleanApplyConstraints,
     ):
         pass
-
     def RotatePart(
         self,
         StringName,
@@ -1855,7 +1584,6 @@ class Assembly:
         BooleanApplyConstraints,
     ):
         pass
-
     def RotatePart(
         self,
         AssembledPartPart,
@@ -1865,7 +1593,6 @@ class Assembly:
         BooleanApplyConstraints,
     ):
         pass
-
     def RotatePart(
         self,
         IADOccurrencePartOcc,
@@ -1875,7 +1602,6 @@ class Assembly:
         BooleanApplyConstraints,
     ):
         pass
-
     def RotateSubAssembly(
         self,
         StringName,
@@ -1885,7 +1611,6 @@ class Assembly:
         BooleanApplyConstraints,
     ):
         pass
-
     def RotateSubAssembly(
         self,
         AssembledSubAssemblySubAssembly,
@@ -1895,7 +1620,6 @@ class Assembly:
         BooleanApplyConstraints,
     ):
         pass
-
     def RotateSubAssembly(
         self,
         IADOccurrenceAssemOcc,
@@ -1905,7 +1629,6 @@ class Assembly:
         BooleanApplyConstraints,
     ):
         pass
-
     def RotateParts(
         self,
         ListNames,
@@ -1915,7 +1638,6 @@ class Assembly:
         BooleanApplyConstraints,
     ):
         pass
-
     def RotateSubAssemblies(
         self,
         ListNames,
@@ -1925,18 +1647,14 @@ class Assembly:
         BooleanApplyConstraints,
     ):
         pass
-
     def AddNewSubAssembly(self, StringName, DoubleX, DoubleY, DoubleZ):
         pass
-
     def AddSubAssembly(self, AssemblyAssembly):
         pass
-
     def AddSubAssembly(
         self, AssemblyAssembly, DoubleOffsetX, DoubleOffsetY, DoubleOffsetZ
     ):
         pass
-
     def AddSubAssembly(
         self,
         AssemblyAssembly,
@@ -1949,15 +1667,12 @@ class Assembly:
         BooleanTranslationFirst,
     ):
         pass
-
     def AddSubAssembly(self, StringFolder, StringName):
         pass
-
     def AddSubAssembly(
         self, StringFolder, StringName, DoubleOffsetX, DoubleOffsetY, DoubleOffsetZ
     ):
         pass
-
     def AddSubAssembly(
         self,
         StringFolder,
@@ -1971,65 +1686,52 @@ class Assembly:
         BooleanTranslationFirst,
     ):
         pass
-
     def AddSubAssembly(self, StringFileName):
         pass
 class Axis:
     def __init__(self, Name):
         pass
         self.Name = Name
-
     def GetPart(
         self,
     ):
         pass
-
     def ConstraintObject(
         self,
     ):
         pass
-
     def AxisObject(
         self,
     ):
         pass
-
     def SelectableObject(
         self,
     ):
         pass
-
     def GetSelectionAssembly(
         self,
     ):
         pass
-
     def SetOccurrence(self, IADOccurrenceOccurrence):
         pass
-
     def GetOccurrence(
         self,
     ):
         pass
-
     def SetParentAssembly(self, AssemblyParentAssembly):
         pass
-
     def GetParentAssembly(
         self,
     ):
         pass
-
     def Hide(
         self,
     ):
         pass
-
     def Show(
         self,
     ):
         pass
-
     def GetGeometry(self, IADPointPoint, IADPointVector):
         pass
 class Bspline:
@@ -2041,35 +1743,26 @@ class Bspline:
         self.IsReference = IsReference
         self.Order = Order
         self.Length = Length
-
     def FigureObject(
         self,
     ):
         pass
-
     def SetInstance(self, IADSketchFigureFigure):
         pass
-
     def GetX(self, Doubleu):
         pass
-
     def GetY(self, Doubleu):
         pass
-
     def GetPointAt(self, Doubleu):
         pass
-
     def GetNormalAt(self, Doubleu):
         pass
-
     def Subdivide(self, Int32Segments):
         pass
-
     def ToXml(
         self,
     ):
         pass
-
     def FromXml(self, XElementXml):
         pass
 class Bspline3D:
@@ -2081,33 +1774,24 @@ class Bspline3D:
         self.IsReference = IsReference
         self.Order = Order
         self.Length = Length
-
     def GetX(self, Doubleu):
         pass
-
     def GetY(self, Doubleu):
         pass
-
     def GetZ(self, Doubleu):
         pass
-
     def GetPointAt(self, Doubleu):
         pass
-
     def GetNormalAt(self, Doubleu):
         pass
-
     def Subdivide(self, Int32Segments):
         pass
-
     def SubdivideGetNormals(self, Int32Segments):
         pass
-
     def ToXml(
         self,
     ):
         pass
-
     def FromXml(self, XElementXml):
         pass
 class Circle:
@@ -2118,20 +1802,16 @@ class Circle:
         self.Radius = Radius
         self.IsReference = IsReference
         self.Length = Length
-
     def FigureObject(
         self,
     ):
         pass
-
     def SetInstance(self, IADSketchFigureFigure):
         pass
-
     def ToXml(
         self,
     ):
         pass
-
     def FromXml(self, XElementXml):
         pass
 class CircularArc:
@@ -2159,20 +1839,16 @@ class CircularArc:
         self.Angle = Angle
         self.Type = Type
         self.IsReference = IsReference
-
     def FigureObject(
         self,
     ):
         pass
-
     def SetInstance(self, IADSketchFigureFigure):
         pass
-
     def ToXml(
         self,
     ):
         pass
-
     def FromXml(self, XElementXml):
         pass
 class CircularArc3D:
@@ -2185,12 +1861,10 @@ class CircularArc3D:
         self.Angle = Angle
         self.Type = Type
         self.IsReference = IsReference
-
     def ToXml(
         self,
     ):
         pass
-
     def FromXml(self, XElementXml):
         pass
 class Configuration:
@@ -2198,20 +1872,16 @@ class Configuration:
         pass
         self.Name = Name
         self.IsActive = IsActive
-
     def SetLocks(self, LockTypesLocks):
         pass
-
     def LockAll(
         self,
     ):
         pass
-
     def UnlockAll(
         self,
     ):
         pass
-
     def Activate(
         self,
     ):
@@ -2221,31 +1891,22 @@ class CSharp:
         self,
     ):
         pass
-
     def add_OnWriteLine(self, WriteLineHandlervalue):
         pass
-
     def remove_OnWriteLine(self, WriteLineHandlervalue):
         pass
-
     def add_OnWrite(self, WriteHandlervalue):
         pass
-
     def remove_OnWrite(self, WriteHandlervalue):
         pass
-
     def CompileAndRun(self, StringCode):
         pass
-
     def CompileAndRun(self, StringCode, PythonDictionaryVariables):
         pass
-
     def Compile(self, StringCode):
         pass
-
     def Run(self, Script1Script):
         pass
-
     def Run(self, Script1Script, PythonDictionaryVariables):
         pass
 class Edge:
@@ -2256,63 +1917,50 @@ class Edge:
         self.Diameter = Diameter
         self.Length = Length
         self.Vertices = Vertices
-
     def GetPart(
         self,
     ):
         pass
-
     def GetVertices(
         self,
     ):
         pass
-
     def FilletableObject(
         self,
     ):
         pass
-
     def ChamferableObject(
         self,
     ):
         pass
-
     def AxisObject(
         self,
     ):
         pass
-
     def PathObject(
         self,
     ):
         pass
-
     def ConstraintObject(
         self,
     ):
         pass
-
     def SelectableObject(
         self,
     ):
         pass
-
     def GetSelectionAssembly(
         self,
     ):
         pass
-
     def SetOccurrence(self, IADOccurrenceOccurrence):
         pass
-
     def GetOccurrence(
         self,
     ):
         pass
-
     def SetParentAssembly(self, AssemblyParentAssembly):
         pass
-
     def GetParentAssembly(
         self,
     ):
@@ -2328,20 +1976,16 @@ class Ellipse:
         self.MajorAxisAngle = MajorAxisAngle
         self.MinorMajorRatio = MinorMajorRatio
         self.IsReference = IsReference
-
     def FigureObject(
         self,
     ):
         pass
-
     def SetInstance(self, IADSketchFigureFigure):
         pass
-
     def ToXml(
         self,
     ):
         pass
-
     def FromXml(self, XElementXml):
         pass
 class EllipticalArc:
@@ -2369,20 +2013,16 @@ class EllipticalArc:
         self.MajorAxisAngle = MajorAxisAngle
         self.MinorMajorRatio = MinorMajorRatio
         self.IsReference = IsReference
-
     def FigureObject(
         self,
     ):
         pass
-
     def SetInstance(self, IADSketchFigureFigure):
         pass
-
     def ToXml(
         self,
     ):
         pass
-
     def FromXml(self, XElementXml):
         pass
 class Face:
@@ -2397,99 +2037,78 @@ class Face:
         self.Coedges = Coedges
         self.AdjoiningFaces = AdjoiningFaces
         self.Vertices = Vertices
-
     def GetPart(
         self,
     ):
         pass
-
     def IsRectangle(
         self,
     ):
         pass
-
     def GetEdges(
         self,
     ):
         pass
-
     def GetAdjoiningFaces(
         self,
     ):
         pass
-
     def GetVertices(
         self,
     ):
         pass
-
     def SurfaceObject(
         self,
     ):
         pass
-
     def SelectableObject(
         self,
     ):
         pass
-
     def PlaneObject(
         self,
     ):
         pass
-
     def FilletableObject(
         self,
     ):
         pass
-
     def ChamferableObject(
         self,
     ):
         pass
-
     def CrossSectionObject(
         self,
     ):
         pass
-
     def ConstraintObject(
         self,
     ):
         pass
-
     def GetSelectionAssembly(
         self,
     ):
         pass
-
     def SetOccurrence(self, IADOccurrenceOccurrence):
         pass
-
     def GetOccurrence(
         self,
     ):
         pass
-
     def SetParentAssembly(self, AssemblyParentAssembly):
         pass
-
     def GetParentAssembly(
         self,
     ):
         pass
-
     def IsParallel(self, FaceOtherFace):
         pass
-
     def DistanceTo(self, FaceOtherFace):
         pass
-
     def GetNormal(
         self,
     ):
         pass
-
     def GetArea(
         self,
     ):
@@ -2498,15 +2117,12 @@ class Feature:
     def __init__(self, Name):
         pass
         self.Name = Name
-
     def GetColor(
         self,
     ):
         pass
-
     def SetColor(self, ColorNewColor):
         pass
-
     def SetColor(self, ByteRed, ByteGreen, ByteBlue):
         pass
 class GearSketch:
@@ -2515,62 +2131,46 @@ class GearSketch:
         self.Name = Name
         self.Figures = Figures
         self.Origin = Origin
-
     def GetPart(
         self,
     ):
         pass
-
     def GetSurface(
         self,
     ):
         pass
-
     def SelectableObject(
         self,
     ):
         pass
-
     def StartEditing(
         self,
     ):
         pass
-
     def StopEditing(
         self,
     ):
         pass
-
     def AddConstraint(self, ISketchFigureFigure, ConstraintsConstraint):
         pass
-
     def AddConstraint(self, ListFigures, ConstraintsConstraint):
         pass
-
     def AddLine(self, ListStartPoint, ListEndPoint, BooleanIsReference):
         pass
-
     def AddLine(self, LineNewLine):
         pass
-
     def AddLine(self, DoubleX1, DoubleY1, DoubleX2, DoubleY2, BooleanIsReference):
         pass
-
     def AddPoint(self, DoubleX, DoubleY):
         pass
-
     def AddPoint(self, DoubleX, DoubleY, BooleanIsReference):
         pass
-
     def AddPoint(self, SketchPointNewPoint):
         pass
-
     def AddLines(self, ListPoints, BooleanIsReference):
         pass
-
     def AddPolyline(self, PolylineLine, BooleanIsReference):
         pass
-
     def AddArcCenterStartEnd(
         self,
         DoubleCenterX,
@@ -2582,7 +2182,6 @@ class GearSketch:
         BooleanIsReference,
     ):
         pass
-
     def AddArcCenterStartAngle(
         self,
         DoubleCenterX,
@@ -2593,7 +2192,6 @@ class GearSketch:
         BooleanIsReference,
     ):
         pass
-
     def AddEllipse(
         self,
         DoubleCenterX,
@@ -2605,7 +2203,6 @@ class GearSketch:
         BooleanIsReference,
     ):
         pass
-
     def AddEllipse(
         self,
         DoubleCenterX,
@@ -2616,10 +2213,8 @@ class GearSketch:
         BooleanIsReference,
     ):
         pass
-
     def AddEllipse(self, EllipseNewEllipse):
         pass
-
     def AddEllipticalArc(
         self,
         DoubleCenterX,
@@ -2634,13 +2229,10 @@ class GearSketch:
         BooleanIsReference,
     ):
         pass
-
     def AddEllipticalArc(self, EllipticalArcNewEllipticalArc):
         pass
-
     def AddArc(self, CircularArcNewArc):
         pass
-
     def AddRectangle(
         self,
         DoubleBottomLeftX,
@@ -2650,15 +2242,12 @@ class GearSketch:
         BooleanIsReference,
     ):
         pass
-
     def AddCircle(
         self, DoubleCenterX, DoubleCenterY, DoubleDiameter, BooleanIsReference
     ):
         pass
-
     def AddCircle(self, CircleNewCircle):
         pass
-
     def AddBspline(
         self,
         Int32Order,
@@ -2668,16 +2257,12 @@ class GearSketch:
         BooleanIsReference,
     ):
         pass
-
     def AddBspline(self, ListPoints, BooleanIsReference):
         pass
-
     def AddFigure(self, ISketchFigureNewFigure):
         pass
-
     def AddBspline(self, BsplineNewBspline):
         pass
-
     def AddBspline(
         self,
         Int32Order,
@@ -2687,13 +2272,10 @@ class GearSketch:
         BooleanIsReference,
     ):
         pass
-
     def AddBsplineInterpolated(self, List1Points, BooleanIsReference):
         pass
-
     def AddBsplineThroughPoints(self, List1Points, BooleanIsReference):
         pass
-
     def AddPolygon(
         self,
         DoubleCenterX,
@@ -2703,25 +2285,20 @@ class GearSketch:
         BooleanIsReference,
     ):
         pass
-
     def AddPolyhole(
         self, DoubleCenterX, DoubleCenterY, DoubleDiameter, BooleanIsReference
     ):
         pass
-
     def PathObject(
         self,
     ):
         pass
-
     def CrossSectionObject(
         self,
     ):
         pass
-
     def CopyFrom(self, SketchSource):
         pass
-
     def CopyFrom(
         self,
         SketchSource,
@@ -2735,82 +2312,60 @@ class GearSketch:
         DoubleScaleFactor,
     ):
         pass
-
     def PointtoGlobal(self, Doublex, Doubley):
         pass
-
     def GlobaltoPoint(self, Doublex, Doubley, Doublez):
         pass
-
     def VertextoPoint(self, VertexVert):
         pass
-
     def GetSelectionAssembly(
         self,
     ):
         pass
-
     def SetOccurrence(self, IADOccurrenceOccurrence):
         pass
-
     def GetOccurrence(
         self,
     ):
         pass
-
     def SetParentAssembly(self, AssemblyParentAssembly):
         pass
-
     def GetParentAssembly(
         self,
     ):
         pass
-
     def AddDimension(self, SketchPointP1, SketchPointP2):
         pass
-
     def AddDimension(self, CircleCircle):
         pass
-
     def AddDimension(self, CircularArcArc):
         pass
-
     def SavetoXml(self, StringFileName):
         pass
-
     def ToXml(
         self,
     ):
         pass
-
     def LoadXml(self, StringFileName):
         pass
-
     def FromXml(self, StringXml):
         pass
-
     def StartFaceMapping(self, VertexEdgeVertex1, VertexEdgeVertex2):
         pass
-
     def StartFaceMapping(self, ListEdgeEndPoint1, ListEdgeEndPoint2):
         pass
-
     def StopFaceMapping(
         self,
     ):
         pass
-
     def StartMapping(self, ListPoint1, ListPoint2, ListPointAboveAxis):
         pass
-
     def StopMapping(
         self,
     ):
         pass
-
     def ImportSVG(self, StringFileName):
         pass
-
     def ImportSVG(
         self,
         StringFileName,
@@ -2821,13 +2376,10 @@ class GearSketch:
         BooleanNativeFigures,
     ):
         pass
-
     def ExportSVG(self, StringFileName):
         pass
-
     def ExportSVG(self, StringFileName, BooleanIncludeReferences):
         pass
-
     def ExportSVG(
         self,
         StringFileName,
@@ -2854,41 +2406,30 @@ class GlobalParameters:
         self.ConfigurationList = ConfigurationList
         self.Parameters = Parameters
         self.Configurations = Configurations
-
     def GetParameter(self, StringName):
         pass
-
     def GetConfiguration(self, StringName):
         pass
-
     def GetActiveConfiguration(
         self,
     ):
         pass
-
     def AddParameter(self, StringName, ParameterTypesType, DoubleValue):
         pass
-
     def AddParameter(self, StringName, ParameterTypesType, StringEquation):
         pass
-
     def AddConfiguration(self, StringName):
         pass
-
     def AddConfiguration(self, StringName, StringBaseConfigurationName):
         pass
-
     def Save(
         self,
     ):
         pass
-
     def Save(self, StringFolder):
         pass
-
     def SaveAs(self, StringFolder, StringNewName):
         pass
-
     def Close(
         self,
     ):
@@ -2898,7 +2439,6 @@ class IAssembled:
         self,
     ):
         pass
-
     def GetMappedOccurrence(self, IADAssemblySessionAssembly):
         pass
 class IAxis:
@@ -2906,12 +2446,10 @@ class IAxis:
         self,
     ):
         pass
-
     def AxisObject(
         self,
     ):
         pass
-
     def GetOccurrence(
         self,
     ):
@@ -2921,7 +2459,6 @@ class IChamferable:
         self,
     ):
         pass
-
     def ChamferableObject(
         self,
     ):
@@ -2931,7 +2468,6 @@ class IConstrainable:
         self,
     ):
         pass
-
     def ConstraintObject(
         self,
     ):
@@ -2941,7 +2477,6 @@ class ICrossSection:
         self,
     ):
         pass
-
     def CrossSectionObject(
         self,
     ):
@@ -2951,7 +2486,6 @@ class IFilletable:
         self,
     ):
         pass
-
     def FilletableObject(
         self,
     ):
@@ -2961,23 +2495,18 @@ class IInstance:
         self,
     ):
         pass
-
     def GetSelectionAssembly(
         self,
     ):
         pass
-
     def GetParentAssembly(
         self,
     ):
         pass
-
     def SetParentAssembly(self, AssemblyParentAssembly):
         pass
-
     def SetOccurrence(self, IADOccurrenceOccurrence):
         pass
-
     def GetOccurrence(
         self,
     ):
@@ -2987,12 +2516,10 @@ class IPlane:
         self,
     ):
         pass
-
     def PlaneObject(
         self,
     ):
         pass
-
     def GetOccurrence(
         self,
     ):
@@ -3002,12 +2529,10 @@ class IPoint:
         self,
     ):
         pass
-
     def PointObject(
         self,
     ):
         pass
-
     def GetOccurrence(
         self,
     ):
@@ -3017,7 +2542,6 @@ class ISelectableGeometry:
         self,
     ):
         pass
-
     def SelectableObject(
         self,
     ):
@@ -3027,17 +2551,14 @@ class ISketchFigure:
         self,
     ):
         pass
-
     def ToXml(
         self,
     ):
         pass
-
     def FigureObject(
         self,
     ):
         pass
-
     def SetInstance(self, IADSketchFigureFigure):
         pass
 class ISketchFigure3D:
@@ -3045,7 +2566,6 @@ class ISketchFigure3D:
         self,
     ):
         pass
-
     def ToXml(
         self,
     ):
@@ -3055,7 +2575,6 @@ class ISketchSurface:
         self,
     ):
         pass
-
     def SurfaceObject(
         self,
     ):
@@ -3065,7 +2584,6 @@ class ISweepPath:
         self,
     ):
         pass
-
     def PathObject(
         self,
     ):
@@ -3079,20 +2597,16 @@ class Line:
         self.Length = Length
         self.Start = Start
         self.End = End
-
     def FigureObject(
         self,
     ):
         pass
-
     def SetInstance(self, IADSketchFigureFigure):
         pass
-
     def ToXml(
         self,
     ):
         pass
-
     def FromXml(self, XElementXml):
         pass
 class Line3D:
@@ -3104,38 +2618,26 @@ class Line3D:
         self.Length = Length
         self.Start = Start
         self.End = End
-
     def SetInstance(self, IAD3DSketchLineLine):
         pass
-
     def ToXml(
         self,
     ):
         pass
-
     def FromXml(self, XElementXml):
         pass
 from Windows import *
 from Part import *
 Win = Windows()
- 
 Win.InfoDialog('I am about to create a part', 'My Script')
- 
 Win.ErrorDialog("Oops. That didn't go as planned", 'My Script')
- 
 # returns True for 'yes' and False for 'no'
 print(Win.QuestionDialog('Shall I stop?', 'My Script'))
-
 Win.InfoDialog()
-
 Part = Part()
-
 class Material:
     def __init__(self, ):
         pass
-
-    
-
 class Parameter:
     def __init__(self, Name, Comment, Equation, ExcelWorkbook, ExcelSheet, ExcelCell, Type, Units, Value, RawValue):
         pass
@@ -3149,10 +2651,8 @@ class Parameter:
         self.Units = Units
         self.Value = Value
         self.RawValue = RawValue
-    
     def AttachToExcel(self,StringDocument,StringSheet,StringCell,UnitTypesUnits):
         pass
-
 class Part:
     def __init__(
         self,
@@ -3250,22 +2750,16 @@ class Part:
         self.ZAxis = ZAxis
         self.Origin = Origin
         self.Selections = Selections
-
     def RemovePoint(self, PointPoint):
         pass
-
     def RemovePlane(self, PlanePlane):
         pass
-
     def RemoveSketch(self, StringName):
         pass
-
     def RemoveSketch(self, SketchSketch):
         pass
-
     def Add3DSketch(self, StringName):
         pass
-
     def AddGear(
         self,
         StringName,
@@ -3280,7 +2774,6 @@ class Part:
         ISketchSurfacePlane,
     ):
         pass
-
     def AddGear(
         self,
         StringName,
@@ -3299,7 +2792,6 @@ class Part:
         ISketchSurfacePlane,
     ):
         pass
-
     def AddRack(
         self,
         StringName,
@@ -3315,7 +2807,6 @@ class Part:
         ISketchSurfacePlane,
     ):
         pass
-
     def AddGearNP(
         self,
         StringName,
@@ -3327,7 +2818,6 @@ class Part:
         ISketchSurfacePlane,
     ):
         pass
-
     def AddGearNP(
         self,
         StringName,
@@ -3340,7 +2830,6 @@ class Part:
         ISketchSurfacePlane,
     ):
         pass
-
     def AddGearDP(
         self,
         StringName,
@@ -3352,7 +2841,6 @@ class Part:
         ISketchSurfacePlane,
     ):
         pass
-
     def AddGearDP(
         self,
         StringName,
@@ -3365,7 +2853,6 @@ class Part:
         ISketchSurfacePlane,
     ):
         pass
-
     def AddGearDN(
         self,
         StringName,
@@ -3377,7 +2864,6 @@ class Part:
         ISketchSurfacePlane,
     ):
         pass
-
     def AddGearDN(
         self,
         StringName,
@@ -3390,39 +2876,28 @@ class Part:
         ISketchSurfacePlane,
     ):
         pass
-
     def AddAxis(self, StringName, ISketchSurfacePlane1, ISketchSurfacePlane2):
         pass
-
     def AddAxis(self, StringName, PointPointA, PointPointB):
         pass
-
     def AddAxis(self, StringName, FaceCylindricalFace):
         pass
-
     def AddAxis(self, StringName, ListPoint1, ListPoint2):
         pass
-
     def AddPoint(self, StringName, ListPoint):
         pass
-
     def AddPoint(self, StringName, PointPoint):
         pass
-
     def AddPoint(self, StringName, DoubleX, DoubleY, DoubleZ):
         pass
-
     def AddPoints(self, StringPrefix, ListPoints):
         pass
-
     def Regenerate(
         self,
     ):
         pass
-
     def AddExtrudeBoss(self, StringName, SketchSketch, DoubleDepth, BooleanIsReversed):
         pass
-
     def AddExtrudeBoss(
         self,
         StringName,
@@ -3438,10 +2913,8 @@ class Part:
         BooleanOutwardDraft,
     ):
         pass
-
     def AddExtrudeCut(self, StringName, SketchSketch, DoubleDepth, BooleanIsReversed):
         pass
-
     def AddExtrudeCut(
         self,
         StringName,
@@ -3457,13 +2930,10 @@ class Part:
         BooleanOutwardDraft,
     ):
         pass
-
     def AddRevolveBoss(self, StringName, SketchSketch, AxisAxis, DoubleAngle):
         pass
-
     def AddRevolveCut(self, StringName, SketchSketch, AxisAxis, DoubleAngle):
         pass
-
     def AddLoftBoss(
         self,
         StringName,
@@ -3474,7 +2944,6 @@ class Part:
         BooleanConnectEnds,
     ):
         pass
-
     def AddLoftBoss(
         self,
         StringName,
@@ -3487,7 +2956,6 @@ class Part:
         BooleanConnectEnds,
     ):
         pass
-
     def AddLoftCut(
         self,
         StringName,
@@ -3498,7 +2966,6 @@ class Part:
         BooleanConnectEnds,
     ):
         pass
-
     def AddLoftCut(
         self,
         StringName,
@@ -3511,7 +2978,6 @@ class Part:
         BooleanConnectEnds,
     ):
         pass
-
     def AddSweepBoss(
         self,
         StringName,
@@ -3525,7 +2991,6 @@ class Part:
         BooleanOutwardDraft,
     ):
         pass
-
     def AddSweepCut(
         self,
         StringName,
@@ -3539,15 +3004,12 @@ class Part:
         BooleanOutwardDraft,
     ):
         pass
-
     def AddFillet(
         self, StringName, IFilletableItem, DoubleRadius, BooleanTangentPropagate
     ):
         pass
-
     def AddFillet(self, StringName, ListItems, DoubleRadius, BooleanTangentPropagate):
         pass
-
     def AddFillet(
         self,
         StringName,
@@ -3557,10 +3019,8 @@ class Part:
         BooleanTangentPropagate,
     ):
         pass
-
     def Scale(self, StringName, BooleanScaleAboutCenter, DoubleScaleFactor):
         pass
-
     def NonUniformScale(
         self,
         StringName,
@@ -3570,7 +3030,6 @@ class Part:
         DoubleScaleFactorZ,
     ):
         pass
-
     def AddChamfer(
         self,
         StringName,
@@ -3580,7 +3039,6 @@ class Part:
         BooleanTangentPropagate,
     ):
         pass
-
     def AddChamfer(
         self,
         StringName,
@@ -3590,37 +3048,30 @@ class Part:
         BooleanTangentPropagate,
     ):
         pass
-
     def AddChamfer(
         self, StringName, IChamferableItem, DoubleDistance, BooleanTangentPropagate
     ):
         pass
-
     def GetEdges(
         self,
     ):
         pass
-
     def GetFaces(
         self,
     ):
         pass
-
     def GetVertices(
         self,
     ):
         pass
-
     def GetBoundingBox(
         self,
     ):
         pass
-
     def AddChamfer(
         self, StringName, ListItems, DoubleDistance, BooleanTangentPropagate
     ):
         pass
-
     def AddChamferAngle(
         self,
         StringName,
@@ -3630,7 +3081,6 @@ class Part:
         BooleanTangentPropagate,
     ):
         pass
-
     def AddChamferAngle(
         self,
         StringName,
@@ -3640,36 +3090,28 @@ class Part:
         BooleanTangentPropagate,
     ):
         pass
-
     def AddVertexChamfer(
         self, StringName, VertexItem, DoubleDistance1, DoubleDistance2, DoubleDistance3
     ):
         pass
-
     def AddVertexChamfer(
         self, StringName, ListItems, DoubleDistance1, DoubleDistance2, DoubleDistance3
     ):
         pass
-
     def Save(
         self,
     ):
         pass
-
     def Save(self, StringFolder):
         pass
-
     def SaveAs(self, StringFolder, StringNewName):
         pass
-
     def Close(
         self,
     ):
         pass
-
     def ExportSTL(self, StringFileName):
         pass
-
     def ExportRotatedSTL(
         self,
         StringFileName,
@@ -3681,30 +3123,22 @@ class Part:
         DoubleSurfaceDeviation,
     ):
         pass
-
     def DisplayUnits(
         self,
     ):
         pass
-
     def ExportSTEP203(self, StringFileName):
         pass
-
     def ExportSTEP214(self, StringFileName):
         pass
-
     def ExportIGES(self, StringFileName):
         pass
-
     def ExportSAT(self, StringFileName, Int32Version, BooleanSaveColors):
         pass
-
     def ExportBIP(self, StringFileName):
         pass
-
     def SetColor(self, ByteRed, ByteGreen, ByteBlue):
         pass
-
     def SaveSnapshot(
         self,
         StringFileName,
@@ -3714,45 +3148,34 @@ class Part:
         BooleanUseWidthandHeight,
     ):
         pass
-
     def SaveThumbnail(self, StringFileName, Int32Width, Int32Height):
         pass
-
     def GetSelection(
         self,
     ):
         pass
-
     def Select(self, ISelectableGeometryFaceorEdge):
         pass
-
     def Select(self, ListFacesEdgesList):
         pass
-
     def SetUserData(self, StringName, PythonDictionaryDict):
         pass
-
     def GetUserData(self, StringName):
         pass
-
     def Debug1(self, PlanePlane):
         pass
-
     def PauseUpdating(
         self,
     ):
         pass
-
     def ResumeUpdating(
         self,
     ):
         pass
-
     def GetSelectionAssembly(
         self,
     ):
         pass
-
     def AddPoint(
         self,
         StringName,
@@ -3762,23 +3185,18 @@ class Part:
         DoubleZOffset,
     ):
         pass
-
     def AddPoint(
         self, StringName, IPointPointOrVertex1, IPointPointOrVertex2, DoubleRatio
     ):
         pass
-
     def AddPoint(self, StringName, IAxisAxisOrEdge1, IAxisAxisOrEdge2):
         pass
-
     def AddPoint(
         self, StringName, IPlanePlaneOrFace1, IPlanePlaneOrFace2, IPlanePlaneOrFace3
     ):
         pass
-
     def AddPoint(self, StringName, IAxisAxisOrEdge, IPlanePlaneOrFace):
         pass
-
     def AddPoint(
         self,
         StringName,
@@ -3788,199 +3206,144 @@ class Part:
         DoubleYOffset,
     ):
         pass
-
     def AddPoint(self, StringName, EdgeTargetEdge, DoubleRatio):
         pass
-
     def AddPointFromCircularEdge(self, StringName, EdgeTargetEdge):
         pass
-
     def AddPointFromToroidalFace(self, StringName, FaceTargetFace):
         pass
-
     def IsOpen(
         self,
     ):
         pass
-
     def GetFeature(self, StringName):
         pass
-
     def RemoveFeature(self, StringName):
         pass
-
     def RemoveFeature(self, FeatureFeature):
         pass
-
     def SuppressFeature(self, StringName):
         pass
-
     def SuppressFeature(self, FeatureFeature):
         pass
-
     def UnsuppressFeature(self, StringName):
         pass
-
     def UnsuppressFeature(self, FeatureFeature):
         pass
-
     def HideFeature(self, StringName):
         pass
-
     def HideFeature(self, FeatureFeature):
         pass
-
     def ShowFeature(self, StringName):
         pass
-
     def ShowFeature(self, FeatureFeature):
         pass
-
     def GetPlane(self, StringName):
         pass
-
     def GetPlane(self, IADDesignPlaneDesignPlane):
         pass
-
     def GetAxis(self, StringName):
         pass
-
     def GetAxis(self, IADDesignAxisDesignAxis):
         pass
-
     def GetPoint(self, StringName):
         pass
-
     def GetPoint(self, IADDesignPointDesignPoint):
         pass
-
     def GetSketch(self, StringName):
         pass
-
     def Get3DSketch(self, StringName):
         pass
-
     def GetFace(self, StringName):
         pass
-
     def GetEdge(self, StringName):
         pass
-
     def GetVertex(self, StringName):
         pass
-
     def GetParameter(self, StringName):
         pass
-
     def GetCustomProperty(self, StringName):
         pass
-
     def SetCustomProperty(self, StringName, StringValue):
         pass
-
     def GetConfiguration(self, StringName):
         pass
-
     def GetActiveConfiguration(
         self,
     ):
         pass
-
     def AddPlane(self, StringName, ISketchSurfaceSourcePlane, DoubleOffset):
         pass
-
     def AddPlane(self, StringName, ListNormalVector, ListPointonPlane):
         pass
-
     def AddPlane(self, StringName, AxisAxis, PointPoint):
         pass
-
     def AddPlane(
         self, StringName, ISketchSurfaceSourcePlane, AxisRotationAxis, DoubleAngle
     ):
         pass
-
     def AddParameter(self, StringName, ParameterTypesType, DoubleValue):
         pass
-
     def AddParameter(
         self, StringName, ParameterTypesType, ParameterUnitsUnitstoUse, DoubleValue
     ):
         pass
-
     def AddParameter(self, StringName, ParameterTypesType, StringEquation):
         pass
-
     def AddConfiguration(self, StringName):
         pass
-
     def AddConfiguration(self, StringName, StringBaseConfigurationName):
         pass
-
     def AddPlane(self, StringName, ListPoint1, ListPoint2, ListPoint3):
         pass
-
     def AddSketch(self, StringName, ISketchSurfacePlane):
         pass
 class Plane:
     def __init__(self, Name):
         pass
         self.Name = Name
-
     def GetPart(
         self,
     ):
         pass
-
     def SurfaceObject(
         self,
     ):
         pass
-
     def ConstraintObject(
         self,
     ):
         pass
-
     def PlaneObject(
         self,
     ):
         pass
-
     def SelectableObject(
         self,
     ):
         pass
-
     def GetSelectionAssembly(
         self,
     ):
         pass
-
     def SetOccurrence(self, IADOccurrenceOccurrence):
         pass
-
     def GetOccurrence(
         self,
     ):
         pass
-
     def SetParentAssembly(self, AssemblyParentAssembly):
         pass
-
     def GetParentAssembly(
         self,
     ):
         pass
-
     def IsParallel(self, PlaneOtherPlane):
         pass
-
     def Hide(
         self,
     ):
         pass
-
     def Show(
         self,
     ):
@@ -3992,63 +3355,50 @@ class Point:
         self.X = X
         self.Y = Y
         self.Z = Z
-
     def PointObject(
         self,
     ):
         pass
-
     def GetPart(
         self,
     ):
         pass
-
     def CrossSectionObject(
         self,
     ):
         pass
-
     def ConstraintObject(
         self,
     ):
         pass
-
     def SelectableObject(
         self,
     ):
         pass
-
     def GetCoordinates(
         self,
     ):
         pass
-
     def GetSelectionAssembly(
         self,
     ):
         pass
-
     def SetOccurrence(self, IADOccurrenceOccurrence):
         pass
-
     def GetOccurrence(
         self,
     ):
         pass
-
     def SetParentAssembly(self, AssemblyParentAssembly):
         pass
-
     def GetParentAssembly(
         self,
     ):
         pass
-
     def Hide(
         self,
     ):
         pass
-
     def Show(
         self,
     ):
@@ -4058,19 +3408,14 @@ class Polyline:
         self,
     ):
         pass
-
     def AddPoint(self, PolylinePointPoint):
         pass
-
     def AddPoint(self, DoubleX, DoubleY):
         pass
-
     def InsertPoint(self, Int32Index, PolylinePointPoint):
         pass
-
     def AddCircle(self, DoubleCenterX, DoubleCenterY, DoubleDiameter, Int32sides):
         pass
-
     def AddArc(
         self,
         PolylinePointCenter,
@@ -4079,48 +3424,36 @@ class Polyline:
         Int32MinimumSegments,
     ):
         pass
-
     def AddPolyline(self, PolylineAppendLine):
         pass
-
     def FindIntersection(self, PolylineL1, PolylineL2):
         pass
-
     def FindIntersectionWithCircle(
         self, PolylineL1, DoubleCircleX, DoubleCircleY, DoubleRadius
     ):
         pass
-
     def FindIntersection(
         self, PolylinePointA1, PolylinePointA2, PolylinePointB1, PolylinePointB2
     ):
         pass
-
     def IsPointOnLine(
         self, PolylinePointA1, PolylinePointA2, PolylinePointPoint, DoubleTolerance
     ):
         pass
-
     def SplitAtPoint(self, PolylinePointSplitPoint, DoubleTolerence):
         pass
-
     def Clone(
         self,
     ):
         pass
-
     def Clone(self, Int32StartIndex, Int32EndIndex):
         pass
-
     def Join(self, PolylineAppendLine):
         pass
-
     def RotateZ(self, DoubleCenterX, DoubleCenterY, DoubleAngle):
         pass
-
     def Offset(self, DoubleOffsetX, DoubleOffsetY):
         pass
-
     def RemoveDuplicates(
         self,
     ):
@@ -4130,41 +3463,30 @@ class Polyline3D:
         self,
     ):
         pass
-
     def AddPoint(self, PolylinePoint3DPoint):
         pass
-
     def AddPoint(self, DoubleX, DoubleY, DoubleZ):
         pass
-
     def InsertPoint(self, Int32Index, PolylinePoint3DPoint):
         pass
-
     def AddPolyline(self, Polyline3DAppendLine):
         pass
-
     def IsPointOnLine(
         self, PolylinePoint3DA, PolylinePoint3DB, PolylinePoint3DP, DoubleTolerance
     ):
         pass
-
     def SplitAtPoint(self, PolylinePoint3DSplitPoint, DoubleTolerence):
         pass
-
     def Clone(
         self,
     ):
         pass
-
     def Clone(self, Int32StartIndex, Int32EndIndex):
         pass
-
     def Join(self, Polyline3DAppendLine):
         pass
-
     def Offset(self, DoubleOffsetX, DoubleOffsetY, DoubleOffsetZ):
         pass
-
     def RemoveDuplicates(
         self,
     ):
@@ -4174,25 +3496,18 @@ class PolylinePoint:
         self,
     ):
         pass
-
     def op_Multiply(self, Matrix3DMatrix, PolylinePointPoint):
         pass
-
     def op_Multiply(self, PolylinePointPoint, Matrix3DMatrix):
         pass
-
     def op_Subtraction(self, PolylinePointP2, PolylinePointP1):
         pass
-
     def CrossProduct(self, PolylinePointP1, PolylinePointP2):
         pass
-
     def Offset(self, DoubleX, DoubleY):
         pass
-
     def Scale(self, DoubleScaleOriginX, DoubleScaleOriginY, DoubleScaleFactor):
         pass
-
     def RotateZ(self, DoubleCenterX, DoubleCenterY, DoubleAngle):
         pass
 class PolylinePoint3D:
@@ -4200,19 +3515,14 @@ class PolylinePoint3D:
         self,
     ):
         pass
-
     def op_Multiply(self, Matrix3DMatrix, PolylinePoint3DPoint):
         pass
-
     def op_Multiply(self, PolylinePoint3DPoint, Matrix3DMatrix):
         pass
-
     def op_Subtraction(self, PolylinePoint3DP2, PolylinePoint3DP1):
         pass
-
     def Offset(self, DoubleX, DoubleY, DoubleZ):
         pass
-
     def Scale(
         self,
         DoubleScaleOriginX,
@@ -4227,62 +3537,46 @@ class Sketch:
         self.Name = Name
         self.Figures = Figures
         self.Origin = Origin
-
     def GetPart(
         self,
     ):
         pass
-
     def GetSurface(
         self,
     ):
         pass
-
     def SelectableObject(
         self,
     ):
         pass
-
     def StartEditing(
         self,
     ):
         pass
-
     def StopEditing(
         self,
     ):
         pass
-
     def AddConstraint(self, ISketchFigureFigure, ConstraintsConstraint):
         pass
-
     def AddConstraint(self, ListFigures, ConstraintsConstraint):
         pass
-
     def AddLine(self, ListStartPoint, ListEndPoint, BooleanIsReference):
         pass
-
     def AddLine(self, LineNewLine):
         pass
-
     def AddLine(self, DoubleX1, DoubleY1, DoubleX2, DoubleY2, BooleanIsReference):
         pass
-
     def AddPoint(self, DoubleX, DoubleY):
         pass
-
     def AddPoint(self, DoubleX, DoubleY, BooleanIsReference):
         pass
-
     def AddPoint(self, SketchPointNewPoint):
         pass
-
     def AddLines(self, ListPoints, BooleanIsReference):
         pass
-
     def AddPolyline(self, PolylineLine, BooleanIsReference):
         pass
-
     def AddArcCenterStartEnd(
         self,
         DoubleCenterX,
@@ -4294,7 +3588,6 @@ class Sketch:
         BooleanIsReference,
     ):
         pass
-
     def AddArcCenterStartAngle(
         self,
         DoubleCenterX,
@@ -4305,7 +3598,6 @@ class Sketch:
         BooleanIsReference,
     ):
         pass
-
     def AddEllipse(
         self,
         DoubleCenterX,
@@ -4317,7 +3609,6 @@ class Sketch:
         BooleanIsReference,
     ):
         pass
-
     def AddEllipse(
         self,
         DoubleCenterX,
@@ -4328,10 +3619,8 @@ class Sketch:
         BooleanIsReference,
     ):
         pass
-
     def AddEllipse(self, EllipseNewEllipse):
         pass
-
     def AddEllipticalArc(
         self,
         DoubleCenterX,
@@ -4346,13 +3635,10 @@ class Sketch:
         BooleanIsReference,
     ):
         pass
-
     def AddEllipticalArc(self, EllipticalArcNewEllipticalArc):
         pass
-
     def AddArc(self, CircularArcNewArc):
         pass
-
     def AddRectangle(
         self,
         DoubleBottomLeftX,
@@ -4362,15 +3648,12 @@ class Sketch:
         BooleanIsReference,
     ):
         pass
-
     def AddCircle(
         self, DoubleCenterX, DoubleCenterY, DoubleDiameter, BooleanIsReference
     ):
         pass
-
     def AddCircle(self, CircleNewCircle):
         pass
-
     def AddBspline(
         self,
         Int32Order,
@@ -4380,16 +3663,12 @@ class Sketch:
         BooleanIsReference,
     ):
         pass
-
     def AddBspline(self, ListPoints, BooleanIsReference):
         pass
-
     def AddFigure(self, ISketchFigureNewFigure):
         pass
-
     def AddBspline(self, BsplineNewBspline):
         pass
-
     def AddBspline(
         self,
         Int32Order,
@@ -4399,13 +3678,10 @@ class Sketch:
         BooleanIsReference,
     ):
         pass
-
     def AddBsplineInterpolated(self, List1Points, BooleanIsReference):
         pass
-
     def AddBsplineThroughPoints(self, List1Points, BooleanIsReference):
         pass
-
     def AddPolygon(
         self,
         DoubleCenterX,
@@ -4415,25 +3691,20 @@ class Sketch:
         BooleanIsReference,
     ):
         pass
-
     def AddPolyhole(
         self, DoubleCenterX, DoubleCenterY, DoubleDiameter, BooleanIsReference
     ):
         pass
-
     def PathObject(
         self,
     ):
         pass
-
     def CrossSectionObject(
         self,
     ):
         pass
-
     def CopyFrom(self, SketchSource):
         pass
-
     def CopyFrom(
         self,
         SketchSource,
@@ -4447,82 +3718,60 @@ class Sketch:
         DoubleScaleFactor,
     ):
         pass
-
     def PointtoGlobal(self, Doublex, Doubley):
         pass
-
     def GlobaltoPoint(self, Doublex, Doubley, Doublez):
         pass
-
     def VertextoPoint(self, VertexVert):
         pass
-
     def GetSelectionAssembly(
         self,
     ):
         pass
-
     def SetOccurrence(self, IADOccurrenceOccurrence):
         pass
-
     def GetOccurrence(
         self,
     ):
         pass
-
     def SetParentAssembly(self, AssemblyParentAssembly):
         pass
-
     def GetParentAssembly(
         self,
     ):
         pass
-
     def AddDimension(self, SketchPointP1, SketchPointP2):
         pass
-
     def AddDimension(self, CircleCircle):
         pass
-
     def AddDimension(self, CircularArcArc):
         pass
-
     def SavetoXml(self, StringFileName):
         pass
-
     def ToXml(
         self,
     ):
         pass
-
     def LoadXml(self, StringFileName):
         pass
-
     def FromXml(self, StringXml):
         pass
-
     def StartFaceMapping(self, VertexEdgeVertex1, VertexEdgeVertex2):
         pass
-
     def StartFaceMapping(self, ListEdgeEndPoint1, ListEdgeEndPoint2):
         pass
-
     def StopFaceMapping(
         self,
     ):
         pass
-
     def StartMapping(self, ListPoint1, ListPoint2, ListPointAboveAxis):
         pass
-
     def StopMapping(
         self,
     ):
         pass
-
     def ImportSVG(self, StringFileName):
         pass
-
     def ImportSVG(
         self,
         StringFileName,
@@ -4533,13 +3782,10 @@ class Sketch:
         BooleanNativeFigures,
     ):
         pass
-
     def ExportSVG(self, StringFileName):
         pass
-
     def ExportSVG(self, StringFileName, BooleanIncludeReferences):
         pass
-
     def ExportSVG(
         self,
         StringFileName,
@@ -4561,43 +3807,32 @@ class Sketch3D:
         pass
         self.Name = Name
         self.Figures = Figures
-
     def GetPart(
         self,
     ):
         pass
-
     def StartEditing(
         self,
     ):
         pass
-
     def StopEditing(
         self,
     ):
         pass
-
     def AddLine(self, ListStartPoint, ListEndPoint):
         pass
-
     def AddLine(self, Line3DNewLine):
         pass
-
     def AddPoint(self, DoubleX, DoubleY, DoubleZ):
         pass
-
     def AddPoint(self, SketchPoint3DNewPoint):
         pass
-
     def AddLine(self, DoubleX1, DoubleY1, DoubleZ1, DoubleX2, DoubleY2, DoubleZ2):
         pass
-
     def AddLines(self, ListPoints):
         pass
-
     def AddPolyline(self, Polyline3DLine):
         pass
-
     def AddArcCenterStartEnd(
         self,
         DoubleCenterX,
@@ -4611,61 +3846,46 @@ class Sketch3D:
         DoubleEndZ,
     ):
         pass
-
     def AddArc(self, CircularArc3DNewArc):
         pass
-
     def AddBspline(self, ListPoints):
         pass
-
     def AddBspline(self, Bspline3DBspline):
         pass
-
     def AddBspline(self, List1Points):
         pass
-
     def PathObject(
         self,
     ):
         pass
-
     def GetSelectionAssembly(
         self,
     ):
         pass
-
     def SetOccurrence(self, IADOccurrenceOccurrence):
         pass
-
     def GetOccurrence(
         self,
     ):
         pass
-
     def SetParentAssembly(self, AssemblyParentAssembly):
         pass
-
     def GetParentAssembly(
         self,
     ):
         pass
-
     def SelectableObject(
         self,
     ):
         pass
-
     def SavetoXml(self, StringFileName):
         pass
-
     def ToXml(
         self,
     ):
         pass
-
     def LoadXml(self, StringFileName):
         pass
-
     def FromXml(self, StringXml):
         pass
 class SketchPoint:
@@ -4675,20 +3895,16 @@ class SketchPoint:
         self.X = X
         self.Y = Y
         self.IsReference = IsReference
-
     def FigureObject(
         self,
     ):
         pass
-
     def SetInstance(self, IADSketchFigureFigure):
         pass
-
     def ToXml(
         self,
     ):
         pass
-
     def FromXml(self, XElementXml):
         pass
 class SketchPoint3D:
@@ -4698,12 +3914,10 @@ class SketchPoint3D:
         self.Y = Y
         self.Z = Z
         self.IsReference = IsReference
-
     def ToXml(
         self,
     ):
         pass
-
     def FromXml(self, XElementXml):
         pass
 class ThreeD:
@@ -4711,19 +3925,14 @@ class ThreeD:
         self,
     ):
         pass
-
     def VectorTransform(self, Vector3DVector1, Vector3DVector2):
         pass
-
     def GetMatrixFromTransformation(self, IADTransformationTransformation):
         pass
-
     def TransformPoint(self, DoublePoint, IADTransformationTransformation):
         pass
-
     def TransformVector(self, DoubleVector, IADTransformationTransformation):
         pass
-
     def CreateTransformation(
         self,
         DoubleOffsetX,
@@ -4736,17 +3945,14 @@ class ThreeD:
         IADGeometryFactoryGeomFactory,
     ):
         pass
-
     def CreateTranslation(
         self, Doublex, Doubley, Doublez, IADGeometryFactoryGeomFactory
     ):
         pass
-
     def CreateRotation(
         self, DoubleAngle, RotationDirectionsDirection, IADGeometryFactoryGeomFactory
     ):
         pass
-
     def DecomposeTransformation(
         self,
         IADTransformationTransformation,
@@ -4758,10 +3964,8 @@ class ThreeD:
         DoubleAngleZ,
     ):
         pass
-
     def GetPerpendicularVector(self, ListVector):
         pass
-
     def TransformPointUsingVectors(
         self, ListSourceVector, ListDestinationVector, ListPoint
     ):
@@ -4771,22 +3975,16 @@ class TwoD:
         self,
     ):
         pass
-
     def TranslatePoint(self, Tuple2Point, DoubleXTranslation, DoubleYTranslation):
         pass
-
     def _RotatePoint(self, Tuple2Point, DoubleAngle):
         pass
-
     def RotatePoint(self, ListPoint, DoubleAngle):
         pass
-
     def IsPointInsidePolygon(self, List1Vertices, Tuple2Point):
         pass
-
     def GetPerpendicularVector(self, ListVector):
         pass
-
     def NormalizeVector(self, ListVector):
         pass
 class Units:
@@ -4794,43 +3992,30 @@ class Units:
         self,
     ):
         pass
-
     def FromADUnitType(self, ADUnitsADUnit):
         pass
-
     def ToADUnits(self, DoubleValue):
         pass
-
     def FromADUnits(self, DoubleValue):
         pass
-
     def ToTeethPerInch(self, DoubleTeethPerCurrentUnits):
         pass
-
     def FromTeethPerInch(self, DoubleTeethPerInch):
         pass
-
     def ToInches(self, DoubleValue):
         pass
-
     def FromInches(self, DoubleValue):
         pass
-
     def ToMillimeters(self, DoubleValue):
         pass
-
     def FromMillimeters(self, DoubleValue):
         pass
-
     def ToADUnits(self, List1Values):
         pass
-
     def ToADUnits(self, DoubleValue, ADUnitsCurrentUnits):
         pass
-
     def FromADUnits(self, DoubleValue, ADUnitsCurrentUnits):
         pass
-
     def FromADUnits(self, List1ADValues):
         pass
 class Vertex:
@@ -4841,48 +4026,38 @@ class Vertex:
         self.X = X
         self.Y = Y
         self.Z = Z
-
     def GetPart(
         self,
     ):
         pass
-
     def ChamferableObject(
         self,
     ):
         pass
-
     def ConstraintObject(
         self,
     ):
         pass
-
     def SelectableObject(
         self,
     ):
         pass
-
     def PointObject(
         self,
     ):
         pass
-
     def GetSelectionAssembly(
         self,
     ):
         pass
-
     def SetOccurrence(self, IADOccurrenceOccurrence):
         pass
-
     def GetOccurrence(
         self,
     ):
         pass
-
     def SetParentAssembly(self, AssemblyParentAssembly):
         pass
-
     def GetParentAssembly(
         self,
     ):
@@ -4892,13 +4067,10 @@ class Windows:
         self,
     ):
         pass
-
     def CloseForm(self, StringSessionIdentifier):
         pass
-
     def GetDisplayedForm(self, StringSessionIdentifier):
         pass
-
     def UtilityDialog(
         self,
         StringTitle,
@@ -4909,7 +4081,6 @@ class Windows:
         Int32InputAreaWidth,
     ):
         pass
-
     def UtilityDialog(
         self,
         StringTitle,
@@ -4921,10 +4092,8 @@ class Windows:
         ObjectUpdateUserInterfaceCallback,
     ):
         pass
-
     def OptionsDialog(self, StringTitle, ListInputs, Int32InputAreaWidth):
         pass
-
     def OptionsDialog(
         self,
         StringTitle,
@@ -4934,36 +4103,25 @@ class Windows:
         ObjectUpdateUserInterfaceCallback,
     ):
         pass
-
     def DisableInput(self, Int32Index):
         pass
-
     def EnableInput(self, Int32Index):
         pass
-
     def GetInputValue(self, Int32Index):
         pass
-
     def SetStringList(self, Int32Index, ObjectStrings):
         pass
-
     def SetInputValue(self, Int32Index, ObjectValue):
         pass
-
     def OpenFileDialog(self, StringTitle, StringFilter, StringDefaultExtension):
         pass
-
     def SaveFileDialog(self, StringTitle, StringFilter, StringDefaultExtension):
         pass
-
     def SelectFolderDialog(self, StringCurrentFolder, StringDescription):
         pass
-
     def InfoDialog(self, StringMessage, StringTitle):
         pass
-
     def ErrorDialog(self, StringMessage, StringTitle):
         pass
-
     def QuestionDialog(self, StringQuestion, StringTitle):
         pass

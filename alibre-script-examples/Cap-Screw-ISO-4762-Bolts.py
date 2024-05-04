@@ -1,12 +1,9 @@
 #https://help.alibre.com/articles/#!alibre-help-v23/cap-screw-iso-4762-bolts
-
 # Creates a metric socket cap screw using ISO 4762
 # See: http://practicalmaintenance.wordpress.com/2009/01/30/socket-head-cap-screws-article-13/
- 
 # Size of screw
 Diameter = 3.0
 Length = 30.0
- 
 # Measurements table containing H, F, E, T, C from web page
 MetricData = {}
 MetricData[1.6]  = [3.14,  2.0,  1.73,  0.7, 0.16]
@@ -28,19 +25,15 @@ MetricData[42.0] = [63.46, 45.6, 36.57, 24.0, 4.2]
 MetricData[48.0] = [72.46, 52.6, 41.13, 28.0, 4.8]
 MetricData[56.0] = [84.54, 63.0, 46.83, 34.0, 5.6]
 MetricData[64.0] = [96.54, 71.0, 52.53, 38.0, 6.4]
- 
 CapDiameter = MetricData[Diameter][0]
 FilletTransitionDiameter = MetricData[Diameter][1]
 HexHoleDiameter = MetricData[Diameter][2]
 HexHoleDepth = MetricData[Diameter][3]
 RimFilletRadius = MetricData[Diameter][4]
- 
 # all values are in millimeters
 Units.Current = UnitTypes.Millimeters
- 
 # Create part
 Screw = Part('Cap Screw M%dx%d' % (Diameter, Length))
- 
 # body
 Profile = Screw.AddSketch('Profile', Screw.GetPlane('XY-Plane'))
 Line = Polyline()
@@ -53,16 +46,13 @@ Line.AddPoint(PolylinePoint(Diameter + Length, 0))
 Line.AddPoint(PolylinePoint(0, 0))
 Profile.AddPolyline(Line, False)
 Screw.AddRevolveBoss('Body', Profile, Screw.GetAxis('X-Axis'), 360)
- 
 # hex hole
 HexHole = Screw.AddSketch('Hole', Screw.GetFace('Face<5>'))
 HexHole.AddPolygon(0, 0, HexHoleDiameter, 6, False)
 Screw.AddExtrudeCut('Hex Hole', HexHole, HexHoleDepth + ((FilletTransitionDiameter - Diameter) / 2.0), True)
- 
 # fillet from cap to shaft
 Screw.AddFillet('Cap Joint', Screw.GetEdge('Edge<21>'), (FilletTransitionDiameter - Diameter) / 2.0, False)
 # fillet at bottom of hex hole
 Screw.AddFillet('Hex Hole Bottom', [Screw.GetEdge('Edge<5>'), Screw.GetEdge('Edge<9>'), Screw.GetEdge('Edge<12>'), Screw.GetEdge('Edge<21>'), Screw.GetEdge('Edge<18>'), Screw.GetEdge('Edge<15>')], (FilletTransitionDiameter - Diameter) / 2.0, False)
 # fillet on rim
 Screw.AddFillet('Cap Rim', Screw.GetEdge('Edge<35>'), RimFilletRadius, False)
-

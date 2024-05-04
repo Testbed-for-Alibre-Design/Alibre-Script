@@ -3,7 +3,6 @@ class ISweepPath:
         self,
     ):
         pass
-
     def PathObject(
         self,
     ):

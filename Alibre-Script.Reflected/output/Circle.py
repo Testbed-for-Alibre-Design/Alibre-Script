@@ -6,19 +6,15 @@ class Circle:
         self.Radius = Radius
         self.IsReference = IsReference
         self.Length = Length
-
     def FigureObject(
         self,
     ):
         pass
-
     def SetInstance(self, IADSketchFigureFigure):
         pass
-
     def ToXml(
         self,
     ):
         pass
-
     def FromXml(self, XElementXml):
         pass

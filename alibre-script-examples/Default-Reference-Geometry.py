@@ -1,8 +1,6 @@
 #https://help.alibre.com/articles/#!alibre-help-v26/default-reference-geometry
-
 # create a new part
 P = Part("Test")
-
 # access reference geometry
 print P.XYPlane
 print P.YZPlane

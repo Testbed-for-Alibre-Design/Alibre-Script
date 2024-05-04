@@ -3,12 +3,10 @@ class IAxis:
         self,
     ):
         pass
-
     def AxisObject(
         self,
     ):
         pass
-
     def GetOccurrence(
         self,
     ):

@@ -8,11 +8,9 @@ class CircularArc3D:
         self.Angle = Angle
         self.Type = Type
         self.IsReference = IsReference
-
     def ToXml(
         self,
     ):
         pass
-
     def FromXml(self, XElementXml):
         pass

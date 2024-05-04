@@ -95,44 +95,34 @@ class AssembledSubAssembly:
         self.Material = Material
         self.Description = Description
         self.Number = Number
-
     def GetSelectionAssembly(
         self,
     ):
         pass
-
     def SetOccurrence(self, IADOccurrenceOccurrence):
         pass
-
     def GetOccurrence(
         self,
     ):
         pass
-
     def GetMappedOccurrence(self, IADAssemblySessionAssembly):
         pass
-
     def SetParentAssembly(self, AssemblyParentAssembly):
         pass
-
     def GetParentAssembly(
         self,
     ):
         pass
-
     def GetConfiguration(self, StringName):
         pass
-
     def GetAssembledPath(
         self,
     ):
         pass
-
     def AddSubAssembly(
         self, StringFileName, DoubleOffsetX, DoubleOffsetY, DoubleOffsetZ
     ):
         pass
-
     def AddSubAssembly(
         self,
         StringFileName,
@@ -145,7 +135,6 @@ class AssembledSubAssembly:
         BooleanTranslationFirst,
     ):
         pass
-
     def AddMateConstraint(
         self,
         DoubleDistance,
@@ -155,7 +144,6 @@ class AssembledSubAssembly:
         IConstrainableItemB,
     ):
         pass
-
     def AddMateConstraint(
         self,
         DoubleDistance,
@@ -167,7 +155,6 @@ class AssembledSubAssembly:
         StringName,
     ):
         pass
-
     def AddMateConstraint2(
         self,
         DoubleDistance1,
@@ -181,7 +168,6 @@ class AssembledSubAssembly:
         ConstraintBoundsTypeBoundsType,
     ):
         pass
-
     def AddFastenerConstraint(
         self,
         DoubleDistance,
@@ -193,7 +179,6 @@ class AssembledSubAssembly:
         StringName,
     ):
         pass
-
     def AddFastenerConstraint2(
         self,
         DoubleDistance1,
@@ -207,7 +192,6 @@ class AssembledSubAssembly:
         ConstraintBoundsTypeBoundsType,
     ):
         pass
-
     def AddAlignConstraint(
         self,
         DoubleDistance,
@@ -217,7 +201,6 @@ class AssembledSubAssembly:
         IConstrainableItemB,
     ):
         pass
-
     def AddAlignConstraint(
         self,
         DoubleDistance,
@@ -229,7 +212,6 @@ class AssembledSubAssembly:
         StringName,
     ):
         pass
-
     def AddAlignConstraint2(
         self,
         DoubleDistance1,
@@ -243,7 +225,6 @@ class AssembledSubAssembly:
         ConstraintBoundsTypeBoundsType,
     ):
         pass
-
     def AddOrientConstraint(
         self,
         DoubleValue,
@@ -253,7 +234,6 @@ class AssembledSubAssembly:
         IConstrainableItemB,
     ):
         pass
-
     def AddOrientConstraint(
         self,
         DoubleValue,
@@ -265,7 +245,6 @@ class AssembledSubAssembly:
         StringName,
     ):
         pass
-
     def AddAngleConstraint(
         self,
         DoubleAngle,
@@ -275,7 +254,6 @@ class AssembledSubAssembly:
         IConstrainableItemB,
     ):
         pass
-
     def AddAngleConstraint(
         self,
         DoubleAngle,
@@ -287,7 +265,6 @@ class AssembledSubAssembly:
         StringName,
     ):
         pass
-
     def AddAngleConstraint2(
         self,
         DoubleAngle1,
@@ -301,7 +278,6 @@ class AssembledSubAssembly:
         ConstraintBoundsTypeBoundsType,
     ):
         pass
-
     def AddGearConstraint(
         self,
         DoubleRatioA,
@@ -314,7 +290,6 @@ class AssembledSubAssembly:
         StringName,
     ):
         pass
-
     def AddRackAndPinionConstraint(
         self,
         DoublePitchDiameter,
@@ -326,7 +301,6 @@ class AssembledSubAssembly:
         StringName,
     ):
         pass
-
     def AddScrewConstraint(
         self,
         DoubleThreadPitch,
@@ -338,7 +312,6 @@ class AssembledSubAssembly:
         StringName,
     ):
         pass
-
     def AddTangentConstraint(
         self,
         DoubleDistance,
@@ -349,7 +322,6 @@ class AssembledSubAssembly:
         BooleanOutside,
     ):
         pass
-
     def AddTangentConstraint(
         self,
         DoubleDistance,
@@ -362,44 +334,32 @@ class AssembledSubAssembly:
         StringName,
     ):
         pass
-
     def CreateUniqueName(self, StringBaseName):
         pass
-
     def ExportSTL(self, StringFileName):
         pass
-
     def ExportSTEP203(self, StringFileName):
         pass
-
     def ExportSTEP214(self, StringFileName):
         pass
-
     def ExportIGES(self, StringFileName):
         pass
-
     def ExportSAT(self, StringFileName, Int32Version, BooleanSaveColors):
         pass
-
     def ExportBIP(self, StringFileName):
         pass
-
     def SetUserData(self, StringName, PythonDictionaryDict):
         pass
-
     def GetUserData(self, StringName):
         pass
-
     def PauseUpdating(
         self,
     ):
         pass
-
     def ResumeUpdating(
         self,
     ):
         pass
-
     def AddPoint(
         self,
         StringName,
@@ -409,23 +369,18 @@ class AssembledSubAssembly:
         DoubleZOffset,
     ):
         pass
-
     def AddPoint(
         self, StringName, IPointPointOrVertex1, IPointPointOrVertex2, DoubleRatio
     ):
         pass
-
     def AddPoint(self, StringName, IAxisAxisOrEdge1, IAxisAxisOrEdge2):
         pass
-
     def AddPoint(
         self, StringName, IPlanePlaneOrFace1, IPlanePlaneOrFace2, IPlanePlaneOrFace3
     ):
         pass
-
     def AddPoint(self, StringName, IAxisAxisOrEdge, IPlanePlaneOrFace):
         pass
-
     def AddPoint(
         self,
         StringName,
@@ -435,113 +390,80 @@ class AssembledSubAssembly:
         DoubleYOffset,
     ):
         pass
-
     def AddPoint(self, StringName, EdgeTargetEdge, DoubleRatio):
         pass
-
     def AddPointFromCircularEdge(self, StringName, EdgeTargetEdge):
         pass
-
     def AddPointFromToroidalFace(self, StringName, FaceTargetFace):
         pass
-
     def GetPlane(self, StringName):
         pass
-
     def GetPlane(self, IADDesignPlaneDesignPlane):
         pass
-
     def GetAxis(self, StringName):
         pass
-
     def GetAxis(self, IADDesignAxisDesignAxis):
         pass
-
     def GetPoint(self, StringName):
         pass
-
     def GetPoint(self, IADDesignPointDesignPoint):
         pass
-
     def GetParameter(self, StringName):
         pass
-
     def GetCustomProperty(self, StringName):
         pass
-
     def SetCustomProperty(self, StringName, StringValue):
         pass
-
     def GetConfiguration(self, StringName):
         pass
-
     def GetActiveConfiguration(
         self,
     ):
         pass
-
     def GetSelection(
         self,
     ):
         pass
-
     def AddPlane(self, StringName, ISketchSurfaceSourcePlane, DoubleOffset):
         pass
-
     def AddPlane(self, StringName, ListNormalVector, ListPointonPlane):
         pass
-
     def AddPlane(
         self, StringName, ISketchSurfaceSourcePlane, AxisRotationAxis, DoubleAngle
     ):
         pass
-
     def AddParameter(self, StringName, ParameterTypesType, DoubleValue):
         pass
-
     def AddParameter(self, StringName, ParameterTypesType, StringEquation):
         pass
-
     def AddConfiguration(self, StringName):
         pass
-
     def AddConfiguration(self, StringName, StringBaseConfigurationName):
         pass
-
     def AddPlane(self, StringName, ListPoint1, ListPoint2, ListPoint3):
         pass
-
     def AddAxis(self, StringName, ISketchSurfacePlane1, ISketchSurfacePlane2):
         pass
-
     def AddAxis(self, StringName, ListPoint1, ListPoint2):
         pass
-
     def AddPoint(self, StringName, DoubleX, DoubleY, DoubleZ):
         pass
-
     def AddPoints(self, StringPrefix, ListPoints):
         pass
-
     def Regenerate(
         self,
     ):
         pass
-
     def Save(
         self,
     ):
         pass
-
     def Save(self, StringFolder):
         pass
-
     def SaveAs(self, StringFolder, StringNewName):
         pass
-
     def SaveAll(self, StringFolder):
         pass
-
     def SaveSnapshot(
         self,
         StringFileName,
@@ -551,23 +473,18 @@ class AssembledSubAssembly:
         BooleanUseWidthandHeight,
     ):
         pass
-
     def Close(
         self,
     ):
         pass
-
     def SaveThumbnail(self, StringFileName, Int32Width, Int32Height):
         pass
-
     def AddPart(self, StringFolder, StringName):
         pass
-
     def AddPart(
         self, StringFolder, StringName, DoubleOffsetX, DoubleOffsetY, DoubleOffsetZ
     ):
         pass
-
     def AddPart(
         self,
         StringFolder,
@@ -581,19 +498,14 @@ class AssembledSubAssembly:
         BooleanTranslationFirst,
     ):
         pass
-
     def AddPart(self, PartPart):
         pass
-
     def AddPart(self, PartPart, DoubleOffsetX, DoubleOffsetY, DoubleOffsetZ):
         pass
-
     def AddPart(self, StringFileName):
         pass
-
     def AddPart(self, StringFileName, DoubleOffsetX, DoubleOffsetY, DoubleOffsetZ):
         pass
-
     def AddPart(
         self,
         StringFileName,
@@ -606,18 +518,14 @@ class AssembledSubAssembly:
         BooleanTranslationFirst,
     ):
         pass
-
     def GetPartOrientation(self, AssembledPartPart):
         pass
-
     def GetPartOrientation(self, StringPartName):
         pass
-
     def DisplayUnits(
         self,
     ):
         pass
-
     def AddPart(
         self,
         PartPart,
@@ -630,24 +538,18 @@ class AssembledSubAssembly:
         BooleanTranslationFirst,
     ):
         pass
-
     def AddNewPart(self, StringName, DoubleX, DoubleY, DoubleZ):
         pass
-
     def GetPart(self, StringName):
         pass
-
     def GetSubAssembly(self, StringName):
         pass
-
     def DuplicatePart(self, StringName, DoubleOffsetX, DoubleOffsetY, DoubleOffsetZ):
         pass
-
     def DuplicatePart(
         self, AssembledPartPart, DoubleOffsetX, DoubleOffsetY, DoubleOffsetZ
     ):
         pass
-
     def DuplicatePart(
         self,
         StringName,
@@ -660,7 +562,6 @@ class AssembledSubAssembly:
         BooleanTranslationFirst,
     ):
         pass
-
     def DuplicatePart(
         self,
         AssembledPartPart,
@@ -673,7 +574,6 @@ class AssembledSubAssembly:
         BooleanTranslationFirst,
     ):
         pass
-
     def DuplicatePart(
         self,
         IADOccurrencePartOcc,
@@ -686,7 +586,6 @@ class AssembledSubAssembly:
         BooleanTranslationFirst,
     ):
         pass
-
     def DuplicateSubAssembly(
         self,
         AssembledSubAssemblySubAssembly,
@@ -695,12 +594,10 @@ class AssembledSubAssembly:
         DoubleOffsetZ,
     ):
         pass
-
     def DuplicateSubAssembly(
         self, StringName, DoubleOffsetX, DoubleOffsetY, DoubleOffsetZ
     ):
         pass
-
     def DuplicateSubAssembly(
         self,
         AssembledSubAssemblySubAssembly,
@@ -713,7 +610,6 @@ class AssembledSubAssembly:
         BooleanTranslationFirst,
     ):
         pass
-
     def DuplicateSubAssembly(
         self,
         StringName,
@@ -726,7 +622,6 @@ class AssembledSubAssembly:
         BooleanTranslationFirst,
     ):
         pass
-
     def DuplicateSubAssembly(
         self,
         IADOccurrenceAssemOcc,
@@ -739,61 +634,42 @@ class AssembledSubAssembly:
         BooleanTranslationFirst,
     ):
         pass
-
     def AnchorPart(self, StringName):
         pass
-
     def AnchorPart(self, AssembledPartPart):
         pass
-
     def AnchorSubAssembly(self, StringName):
         pass
-
     def UnanchorPart(self, StringName):
         pass
-
     def UnanchorPart(self, AssembledPartPart):
         pass
-
     def UnanchorSubAssembly(self, StringName):
         pass
-
     def HidePart(self, StringName):
         pass
-
     def HidePart(self, AssembledPartPart):
         pass
-
     def HideSubAssembly(self, StringName):
         pass
-
     def ShowPart(self, StringName):
         pass
-
     def ShowPart(self, AssembledPartPart):
         pass
-
     def ShowSubAssembly(self, StringName):
         pass
-
     def SuppressPart(self, StringName):
         pass
-
     def SuppressPart(self, AssembledPartPart):
         pass
-
     def SuppressSubAssembly(self, StringName):
         pass
-
     def UnsuppressPart(self, StringName):
         pass
-
     def UnsuppressPart(self, AssembledPartPart):
         pass
-
     def UnsuppressSubAssembly(self, StringName):
         pass
-
     def MovePart(
         self,
         StringName,
@@ -803,7 +679,6 @@ class AssembledSubAssembly:
         BooleanApplyConstraints,
     ):
         pass
-
     def MovePart(
         self,
         AssembledPartPart,
@@ -813,7 +688,6 @@ class AssembledSubAssembly:
         BooleanApplyConstraints,
     ):
         pass
-
     def MovePart(
         self,
         IADOccurrencePartOcc,
@@ -823,7 +697,6 @@ class AssembledSubAssembly:
         BooleanApplyConstraints,
     ):
         pass
-
     def MoveSubAssembly(
         self,
         StringName,
@@ -833,7 +706,6 @@ class AssembledSubAssembly:
         BooleanApplyConstraints,
     ):
         pass
-
     def MoveSubAssembly(
         self,
         AssembledSubAssemblySubAssembly,
@@ -843,7 +715,6 @@ class AssembledSubAssembly:
         BooleanApplyConstraints,
     ):
         pass
-
     def MoveSubAssembly(
         self,
         IADOccurrenceAssemOcc,
@@ -853,7 +724,6 @@ class AssembledSubAssembly:
         BooleanApplyConstraints,
     ):
         pass
-
     def MoveParts(
         self,
         ListNames,
@@ -863,7 +733,6 @@ class AssembledSubAssembly:
         BooleanApplyConstraints,
     ):
         pass
-
     def MoveSubAssemblies(
         self,
         ListNames,
@@ -873,7 +742,6 @@ class AssembledSubAssembly:
         BooleanApplyConstraints,
     ):
         pass
-
     def RotatePart(
         self,
         StringName,
@@ -883,7 +751,6 @@ class AssembledSubAssembly:
         BooleanApplyConstraints,
     ):
         pass
-
     def RotatePart(
         self,
         AssembledPartPart,
@@ -893,7 +760,6 @@ class AssembledSubAssembly:
         BooleanApplyConstraints,
     ):
         pass
-
     def RotatePart(
         self,
         IADOccurrencePartOcc,
@@ -903,7 +769,6 @@ class AssembledSubAssembly:
         BooleanApplyConstraints,
     ):
         pass
-
     def RotateSubAssembly(
         self,
         StringName,
@@ -913,7 +778,6 @@ class AssembledSubAssembly:
         BooleanApplyConstraints,
     ):
         pass
-
     def RotateSubAssembly(
         self,
         AssembledSubAssemblySubAssembly,
@@ -923,7 +787,6 @@ class AssembledSubAssembly:
         BooleanApplyConstraints,
     ):
         pass
-
     def RotateSubAssembly(
         self,
         IADOccurrenceAssemOcc,
@@ -933,7 +796,6 @@ class AssembledSubAssembly:
         BooleanApplyConstraints,
     ):
         pass
-
     def RotateParts(
         self,
         ListNames,
@@ -943,7 +805,6 @@ class AssembledSubAssembly:
         BooleanApplyConstraints,
     ):
         pass
-
     def RotateSubAssemblies(
         self,
         ListNames,
@@ -953,18 +814,14 @@ class AssembledSubAssembly:
         BooleanApplyConstraints,
     ):
         pass
-
     def AddNewSubAssembly(self, StringName, DoubleX, DoubleY, DoubleZ):
         pass
-
     def AddSubAssembly(self, AssemblyAssembly):
         pass
-
     def AddSubAssembly(
         self, AssemblyAssembly, DoubleOffsetX, DoubleOffsetY, DoubleOffsetZ
     ):
         pass
-
     def AddSubAssembly(
         self,
         AssemblyAssembly,
@@ -977,15 +834,12 @@ class AssembledSubAssembly:
         BooleanTranslationFirst,
     ):
         pass
-
     def AddSubAssembly(self, StringFolder, StringName):
         pass
-
     def AddSubAssembly(
         self, StringFolder, StringName, DoubleOffsetX, DoubleOffsetY, DoubleOffsetZ
     ):
         pass
-
     def AddSubAssembly(
         self,
         StringFolder,
@@ -999,6 +853,5 @@ class AssembledSubAssembly:
         BooleanTranslationFirst,
     ):
         pass
-
     def AddSubAssembly(self, StringFileName):
         pass

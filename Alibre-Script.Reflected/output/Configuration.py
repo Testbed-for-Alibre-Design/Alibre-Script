@@ -3,20 +3,16 @@ class Configuration:
         pass
         self.Name = Name
         self.IsActive = IsActive
-
     def SetLocks(self, LockTypesLocks):
         pass
-
     def LockAll(
         self,
     ):
         pass
-
     def UnlockAll(
         self,
     ):
         pass
-
     def Activate(
         self,
     ):

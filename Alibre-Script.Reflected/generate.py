@@ -20,7 +20,6 @@ class {class_name}:
     {methods}
 """
     property_template = "        self.{property_name} = {property_name}"
-
     method_template = """
     def {method_name}:
         pass
