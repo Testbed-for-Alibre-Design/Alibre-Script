@@ -1498,3 +1498,12 @@ class Vertex:
     def Z(self, *args, **kwargs):
         return None
 
+
+
+from enum import Enum
+
+class UnitTypes(Enum):
+    Millimeters = 1
+    Inches = 2
+    Centimeters = 3
+    
