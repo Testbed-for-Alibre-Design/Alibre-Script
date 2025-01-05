@@ -90,4 +90,4 @@ for blade in range(num_blades):
 
 
 
-Win.InfoDialog('Done.')
+Win.InfoDialog('Done.',"Fibonacci Propeller Blade Generator")
